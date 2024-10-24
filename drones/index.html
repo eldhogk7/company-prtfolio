@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Drones</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Page-1.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+     <!-- outline css -->
+     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+    
+     <link rel="stylesheet" href="../css/bootstrap.min1.css">
+     <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+     <link rel="stylesheet" href="../css/style1.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..."crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <!-- <link rel="stylesheet" href="css/style.css"> -->
+     
+     
+     <!-- ------ -->
+    
+    <meta name="theme-color" content="#ff7070">
+    <meta property="og:title" content="Page 1">
+    <meta property="og:type" content="website">
+</head>
+  <body style="overflow-x: hidden;" data-home-page="Page-1.html" data-home-page-title="Page 1" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+    
+     <!-- ---------------------------------------------------------------------------------------------------------------- -->
+     <nav class="my-phone-nav">
+      <div class="phone-nav-container">
+          <div class="phone-nav-logo"><a class="my-logo-text" href="../index.html"><img src="../assets/images/ABHRAM LOGO 1.png" style="width: 100px;"></a></div>
+          <div class="phone-nav-icons">
+              <ul>
+                  <li onclick="showsearchbar()" class="phone-list-icon"><i class='bx bx-search'></i></li>
+                  <li class="phone-list-icon"><a href="../store/index.html" class="my-icon-a"><i class='bx bx-store' ></i></a></li>
+                  <li onclick="onmenuclick();" class="phone-list-icon"><i class='bx bx-menu' ></i></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="phone-menu-open">
+      <i onclick="onmenuclose();" class="fa-solid fa-xmark"></i>
+      <div class="menu-container-inner">
+          <ul>
+              <!-- <li onclick="showdivsubs('phone-menu-open-sub1');" class="menu-inner-list">Products</li>
+              <li onclick="showdivsubs('phone-menu-open-sub2');" class="menu-inner-list">Services</li>
+              <li onclick="showdivsubs('phone-menu-open-sub3');" class="menu-inner-list">R & D</li> -->
+              <li class="menu-inner-list"><a href="../iot/index.html">Ai IoT</a></li>
+              <li class="menu-inner-list"><a href="../embedded/index.html">Power Flight</a></li>
+              <!-- <li class="menu-inner-list"><a href="../robot/index.html">Robots</a></li> -->
+              <li class="menu-inner-list"><a href="../drones/index.html">Drones</a></li>
+              <!-- <li class="menu-inner-list"><a href="#">Drone Accessories</a></li> -->
+              <!-- <li class="menu-inner-list"><a href="../com/index.html">IO Cloud</a></li> -->
+              <!-- <li class="menu-inner-list"><a href="../som/index.html">IO Chip</a></li> -->
+              <li class="menu-inner-list"><a href="../services/index.html">Services</a></li>
+              <!-- <li class="menu-inner-list"><a href="../kids/index.html">Kids</a></li> -->
+              <li class="menu-inner-list"><a href="../connect/index.html">Connect</a></li>
+              <li class="menu-inner-list"><a href="../team/index.html">Team</a></li>
+            </ul>
+      </div>
+  </div>
+  
+  <div class="nav-search-bar">
+      <i onclick="hidesearchbar();" class="fa-solid fa-xmark"></i>
+      <div class="search-bar">
+          <i class='bx bx-search'></i>
+          <input type="text" name="" onkeyup="mySearchFunction();" id="search-input" placeholder="Search here..">
+      </div>
+      <div class="search-result">
+          <ul id="my-search-ul">
+              <li><a href="../iot/index.html">Ai IoT</a></li>
+              <li><a href="../com/index.html">IO Cloud</a></li>
+              <!-- <li><a href="../som/index.html">IO Chip</a></li> -->
+              <li><a href="../drones/index.html">Drones</a></li>
+              <li><a href="../drones/index.html#carousel_508b">Drone Accessories</a></li>
+              <!-- <li><a href="../robot/index.html">Robots</a></li> -->
+              <li><a href="../services/index.html#carousel_9129">Cloud Services</a></li>
+              <li><a href="../services/index.html#sec-d8ca">R & D Example Products</a></li>
+              <li><a href="../services/index.html#sec-321b">Manufacturing & Prototyping</a></li>
+              <li><a href="../iot/index.html#carousel_2b51">Temperature Analyser</a></li>
+              <li><a href="../iot/index.html#carousel_2b51">Plant Health Monitor</a></li>
+              <li><a href="../drones/index.html#carousel_eb88">FPV Drone Nano</a></li>
+              <li><a href="../drones/index.html#carousel_72be">FPV Drone Micro</a></li>
+              <li><a href="../drones/index.html#carousel_2466">FPV Drone Mini</a></li>
+              <li><a href="../drones/index.html#carousel_fcdf">Custom Drone boards</a></li>
+            </ul>
+      </div>
+      <div class="suggessions-bar">
+          <h6>Suggested Links</h6>
+          <ul>
+              <li><a href="../services/index.html">Research and Devolopment</a></li>
+              <ul>
+                <li><a href="../services/index.html">Drone servivces</a></li>
+                <li><a href="../services/index.html">Custom Drone</a></li>
+                <li><a href="../iot/index.html#carousel_2b51">Temperature Analyzer</a></li>
+                <li><a href="../iot/index.html">Custom IOT Board</a></li>
+                <li><a href="../com/index.html">IO Cloud</a></li>
+                <li><a href="../iot/index.html">Micro Board X</a></li>
+                <!-- <li><a href="../som/index.html">IO chip</a></li> -->
+                <li><a href="../iot/index.html">Micro Code</a></li>
+                <li><a href="../team/index.html">Team</a></li>
+                <li><a href="../connect/index.html#carousel_0256">Connect</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+      </div>
+  </div>
+  
+  <nav class="my-nav">
+      <div class="my-nav-container">
+        <div onmouseover="hideHoverBanner()" class="my-logo"><a class="my-logo-text" href="../index.html"><img src="../assets/images/ABHRAM LOGO 1.png" style="width: 250px;"></a></div>
+          <div class="my-links">
+              <ul>
+                  <li  class="mylist"><a href="../iot/index.html" class="my-list-link">Ai IoT</a></li>
+                  <li  class="mylist"><a href="../embedded/index.html" class="my-list-link">Power Flight</a></li>
+                  <!-- <li  class="mylist"><a href="../robot/index.html" class="my-list-link">Robots</a></li> -->
+                  <li  class="mylist"><a href="../drones/index.html" class="my-list-link">Drones</a></li>
+                  <!-- <li class="mylist"><a href="#" class="my-list-link">Accessories</a></li> -->
+                  <!-- <li  class="mylist"><a href="../com/index.html" class="my-list-link">IO Cloud</a></li> -->
+                  <!-- <li  class="mylist"><a href="../som/index.html" class="my-list-link">IO Chip</a></li> -->
+                  <li  class="mylist"><a href="../services/index.html" class="my-list-link">Services</a></li>
+                  <!-- <li  class="mylist"><a href="../kids/index.html" class="my-list-link">Kids</a></li> -->
+                  <li  class="mylist"><a href="../connect/index.html" class="my-list-link">Connect</a></li>
+                  <li  class="mylist"><a href="../team/index.html" class="my-list-link">Team</a></li>
+                </ul>
+          </div>
+          <div onmouseout="hideHoverBanner()" class="cover-div"></div>
+          <div class="my-icons">
+              <ul>
+                  <li onmouseover="hideHoverBanner();" class="my-icon-list"><a onclick="showsearchbar();" class="my-icon-a"><i onclick="showsearchbar();" class="fa-solid fa-magnifying-glass"></i></a></li>
+                  <li onmouseover="hideHoverBanner();" class="my-icon-list"><a href="../store/index.html" class="my-icon-a"><i class='bx bx-store' ></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+  
+
+<!-- ----------------------------------------------------------------------------------- -->
+
+    <section class="u-align-center u-clearfix u-image u-shading u-section-1" id="carousel_49ca" data-image-width="2000" data-image-height="1333">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h3 class="u-align-left u-custom-font u-font-roboto u-text u-text-body-alt-color u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">ABHRAM  </h3>
+        <h1 class="u-align-left u-custom-font u-font-roboto u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000">DRONES </h1>
+        <h3 class="u-align-left u-text u-text-body-alt-color u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0"> "Embark on a journey into the skies with our comprehensive range of drone services and cutting-edge accessories, designed to elevate your aerial experience and meet the diverse needs of enthusiasts, professionals, and industry applications."</h3>
+        <!-- <a onclick="contact_fill('drone');" class="u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-none u-radius u-text-body-alt-color u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0">Contact us</a> -->
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-60 u-section-4" id="carousel_2466">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-23 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-bottom-xl u-valign-middle-lg u-valign-middle-md u-container-layout-1">
+                  <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/Saphi.png" data-image-width="641" data-image-height="389">
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-37 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-bottom-sm u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-container-layout-2">
+                  <h2 class="u-custom-font u-font-playfair-display u-text u-text-1">SAPHI 24</h2>
+                  <p class="u-text u-text-white u-text-2"> "The Mini drone elevates the thrill of flying with its compact design and immersive first-person view capabilities, making it a perfect choice for hobbyists seeking a dynamic and portable aerial experience. Whether for capturing mesmerizing footage or honing piloting skills in diverse settings, the saphi 24 is your ticket to an exciting world of aerial exploration."</p>
+                  <a onclick="contact_fill('fpv_mini');" class="u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-none u-radius u-btn-1">CONTACT US </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-70 u-section-5" id="sec-1cc0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-37 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <h2 class="u-custom-font u-font-playfair-display u-text u-text-1"> SCARLET 47</h2>
+                  <p class="u-text u-text-white u-text-2"> Explore our cutting-edge surveillance drone products, designed to revolutionize aerial monitoring and reconnaissance. Our drones feature state-of-the-art technology for enhanced surveillance capabilities, ensuring unparalleled performance and reliability in security&nbsp;<br>
+                  </p>
+                  <a onclick="contact_fill('survi_drone');" class="u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-none u-radius u-btn-1">CONTACT US </a>
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-23 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-bottom-xl u-valign-middle-lg u-valign-middle-md u-container-layout-2">
+                  <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/Survilanvce.png" data-image-width="641" data-image-height="389">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-80 u-section-6" id="sec-5f16">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-center u-container-style u-layout-cell u-left-cell u-size-23 u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-bottom-xl u-valign-middle-lg u-valign-middle-md u-container-layout-1">
+                  <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" src="images/Agri.JPG" data-image-width="641" data-image-height="389">
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-37 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <h2 class="u-custom-font u-font-playfair-display u-text u-text-1">GREEN 20 </h2>
+                  <p class="u-text u-text-white u-text-2"> Explore our cutting-edge agricultural drones, designed for precision crop monitoring and soil analysis. With advanced sensors and intuitive controls, our drones optimize crop yields and resource efficiency for sustainable farming practices.</p>
+                  <a onclick="contact_fill('agri_drone');" class="u-border-2 u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-none u-radius u-btn-1">CONTACT US </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="u-align-center u-black u-clearfix u-section-8" id="carousel_fcdf">
+      <div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="u-grey-70 u-shape u-shape-rectangle u-shape-1"></div>
+        <div class="u-grey-70 u-shape u-shape-rectangle u-shape-2"></div>
+        <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-32 u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <img class="u-expanded-width u-image u-image-contain u-image-default u-preserve-proportions u-image-1" src="images/image-removebg-preview5.png" alt="" data-image-width="500" data-image-height="500">
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-28 u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1000">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <h2 class="u-text u-text-1">Custom Drone Boards </h2>
+                  <p class="u-text u-text-2"> "Tailoring to your specific needs, we specialize in crafting custom drone boards, ensuring a seamless integration of technology that aligns perfectly with your unique design requirements."</p>
+                  <a onclick="contact_fill('drone_custom');" class="u-border-2 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-none u-radius u-text-active-black u-text-black u-text-hover-black u-btn-1">Contact US </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+<section class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 py-4 py-md-5">
+              <div class="d-flex align-items-center">
+                <img src="/assets/images/ABHRAM LOGO FINAL.png" style="width: 110px; margin-bottom: 1rem;">
+              </div>
+              <p class="py-3 para-light">Abhram Technologies pioneers transformative solutions, seamlessly integrating AI, robotics, and cloud services to redefine technological landscapes.</p>
+              <div class="d-flex align-items-center">
+                  <!-- <div>
+                      <p style=" padding:3px; bottom: 0;">© 2023 Abhram Technologies</p><br>
+                      
+                  </div> -->
+              </div>
+          </div> <!-- end of col -->
+
+          <div class="col-lg-3 py-4 py-md-5">
+              <div>
+                  <h4 class="py-2">Quick Links</h4>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../services/index.html"><p class="ms-3">Services</p></a>
+                  </div>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../connect/index.html"><p class="ms-3">Contact</p></a>
+                  </div>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../kids/index.html"><p class="ms-3">Kids</p></a>
+                  </div>
+              </div>
+          </div> <!-- end of col -->
+
+          <div class="col-lg-3 py-4 py-md-5">
+              <div>
+                  <h4 class="py-2">Useful Links</h4>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../privacy.html"><p class="ms-3">Privacy Policy</p></a>
+                  </div>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../disclaimer.html"><p class="ms-3">Disclaimer</p></a>
+                  </div>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../faq.html"><p class="ms-3">FAQ</p></a>
+                  </div>
+              </div>
+          </div> <!-- end of col -->
+
+          <div class="col-lg-3 py-4 py-md-5">
+              <div class="d-flex align-items-center">
+                  <h4>Connect Us</h4>
+              </div>
+              
+              <div class="d-flex align-items-center py-2">
+                  <i class="fas fa-caret-right"></i>
+                  <p class="ms-3">Kallarikkal building , Arpana Nagar, Palluruthy, Kochi, 
+                      682006</p>
+              </div>
+              <div class="d-flex align-items-center py-2">
+                  <i class="fas fa-caret-right"></i>
+                  <p class="ms-3">Mail us io@abhram.com</p>
+              </div>
+              <div class="d-flex align-items-center py-2">
+                  <i class="fas fa-caret-right"></i>
+                  <p class="ms-3">Call Us (+91) 9961 638 639</p>
+              </div>
+
+
+              <div style="margin-top: 10px;" class="d-flex">
+                  <div class="me-3">
+                      <a href="https://www.facebook.com/profile.php?id=61552439575358">
+                          <i class="fa-brands fa-facebook fa-xl"></i>
+                      </a>
+                  </div>
+                  <div class="me-3">
+                      <a href="https://twitter.com/Abhram_Tech">
+                          <i class="fa-brands fa-x-twitter fa-xl"></i>
+                      </a>
+                  </div>
+                  <div class="me-3">
+                      <a href="https://www.instagram.com/abhram_technologies?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr">
+                          <i class="fa-brands fa-instagram fa-xl"></i>
+                      </a>
+                  </div>
+                  <div class="me-3">
+                      <a href="https://www.linkedin.com/company/abhram-technologies/">
+                          <i class="fa-brands fa-linkedin fa-xl"></i>
+                      </a>
+                  </div>
+              </div>
+
+          </div> <!-- end of col -->
+      </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</section> <!-- end of footer -->
+
+<div style="line-height: 0;" class="bottom text-light" >
+  <div class="container">
+      <div>
+          <p style="text-align:center; color: #454545; bottom: 0; font-size:14px;">© 2024 <a style="color: #454545; text-decoration: none; font-size:14px;" href="../index.html">Abhram Technologies</a></p>
+         
+      </div>
+  </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+<!-- Bottom -->
+<div style="line-height: 0;" class="bottom text-light" >
+  <div class="container">
+      <div>
+          <p style=" opacity:0; color: #222222; bottom: 0; text-align:center; font-size:14px;">Devoloped by: <a style="color: #222222; text-decoration: none; font-size:14px;" href="https://memyselfarju.000webhostapp.com/">arju</a></p>
+          
+      </div>
+  </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+
+
+<!-- //Back To Top Button
+<button onclick="topFunction()" id="myBtn">
+  <img src="assets/images/up-arrow.png" alt="alternative">
+</button>
+//end of back to top button -->
+
+
+<!-- Scripts -->
+<script src="../js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+<!-- <script src="../js/purecounter.min.js"></script> Purecounter counter for statistics numbers -->
+<!-- <script src="../js/swiper.min.js"></script>Swiper for image and text sliders -->
+<!-- <script src="../js/aos.js"></script>AOS on Animation Scroll -->
+<script src="../js/script1.js"></script>  <!-- Custom scripts -->
+
+</body></html>
