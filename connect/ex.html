@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Custom Video Player</title>
+   <!-- Boxicons CDN -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       body {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           min-height: 100vh;
+           background: #f0f0f0;
+       }
+
+       .video-container {
+           position: relative;
+           width: 100%;
+           height: 0;
+           padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+           margin: 0 auto;
+           overflow: hidden;
+           box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+       }
+
+       video {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+       }
+
+       .video-controls {
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background: rgba(0, 0, 0, 0.3);
+           opacity: 0;
+           transition: opacity 0.3s;
+       }
+
+       .video-container:hover .video-controls {
+           opacity: 1;
+       }
+
+       /* Center play/pause button */
+       .play-pause-btn {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           background: rgba(0, 0, 0, 0.6);
+           border: none;
+           border-radius: 50%;
+           width: 60px;
+           height: 60px;
+           cursor: pointer;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           transition: background 0.3s;
+       }
+
+       .play-pause-btn i {
+           color: white;
+           font-size: 30px;
+       }
+
+       /* Bottom right mute button */
+       .mute-btn {
+           position: absolute;
+           bottom: 20px;
+           right: 20px;
+           background: rgba(0, 0, 0, 0.6);
+           border: none;
+           border-radius: 50%;
+           width: 40px;
+           height: 40px;
+           cursor: pointer;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           transition: background 0.3s;
+       }
+
+       .mute-btn i {
+           color: white;
+           font-size: 20px;
+       }
+
+       /* Progress bar container */
+       .progress-container {
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           height: 3px;
+           background: rgba(255, 255, 255, 0.2);
+       }
+
+       .progress-bar {
+           height: 100%;
+           background: #fff;
+           width: 0;
+           transition: width 0.1s linear;
+       }
+
+       /* Hover effects for buttons */
+       .play-pause-btn:hover,
+       .mute-btn:hover {
+           background: rgba(0, 0, 0, 0.8);
+       }
+
+       /* Responsive Design */
+       @media (max-width: 768px) {
+           .play-pause-btn {
+               width: 50px;
+               height: 50px;
+           }
+
+           .play-pause-btn i {
+               font-size: 24px;
+           }
+
+           .mute-btn {
+               width: 35px;
+               height: 35px;
+               bottom: 15px;
+               right: 15px;
+           }
+
+           .mute-btn i {
+               font-size: 18px;
+           }
+       }
+
+       /* Container responsive widths */
+       @media (min-width: 1200px) {
+           .video-container {
+               max-width: 1140px;
+           }
+       }
+
+       @media (max-width: 1199px) {
+           .video-container {
+               max-width: 960px;
+           }
+       }
+
+       @media (max-width: 991px) {
+           .video-container {
+               max-width: 720px;
+           }
+       }
+
+       @media (max-width: 767px) {
+           .video-container {
+               max-width: 540px;
+           }
+       }
+
+       @media (max-width: 575px) {
+           .video-container {
+               max-width: 100%;
+               margin: 0 15px;
+           }
+       }
+   </style>
+</head>
+<body>
+   <div class="video-container">
+       <video id="myVideo">
+           <source src="../images/video.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+       </video>
+       
+       <div class="video-controls">
+           <!-- Center play/pause button -->
+           <button class="play-pause-btn">
+               <i class='bx bx-play'></i>
+           </button>
+           
+           <!-- Bottom right mute button -->
+           <button class="mute-btn">
+               <i class='bx bx-volume-full'></i>
+           </button>
+
+           <!-- Progress bar -->
+           <div class="progress-container">
+               <div class="progress-bar"></div>
+           </div>
+       </div>
+   </div>
+
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           const video = document.getElementById('myVideo');
+           const playPauseBtn = document.querySelector('.play-pause-btn');
+           const muteBtn = document.querySelector('.mute-btn');
+           const playIcon = playPauseBtn.querySelector('i');
+           const muteIcon = muteBtn.querySelector('i');
+           const progressBar = document.querySelector('.progress-bar');
+
+           // Play/Pause functionality
+           playPauseBtn.addEventListener('click', function() {
+               if (video.paused) {
+                   video.play();
+                   playIcon.classList.remove('bx-play');
+                   playIcon.classList.add('bx-pause');
+               } else {
+                   video.pause();
+                   playIcon.classList.remove('bx-pause');
+                   playIcon.classList.add('bx-play');
+               }
+           });
+
+           // Clicking on video also toggles play/pause
+           video.addEventListener('click', function() {
+               playPauseBtn.click();
+           });
+
+           // Mute functionality
+           muteBtn.addEventListener('click', function() {
+               if (video.muted) {
+                   video.muted = false;
+                   muteIcon.classList.remove('bx-volume-mute');
+                   muteIcon.classList.add('bx-volume-full');
+               } else {
+                   video.muted = true;
+                   muteIcon.classList.remove('bx-volume-full');
+                   muteIcon.classList.add('bx-volume-mute');
+               }
+           });
+
+           // Update progress bar
+           video.addEventListener('timeupdate', function() {
+               const progress = (video.currentTime / video.duration) * 100;
+               progressBar.style.width = progress + '%';
+           });
+
+           // Update play/pause icon when video ends
+           video.addEventListener('ended', function() {
+               playIcon.classList.remove('bx-pause');
+               playIcon.classList.add('bx-play');
+               progressBar.style.width = '0%';
+           });
+
+           // Hide controls when video is playing
+           let hideControlsTimeout;
+           
+           video.addEventListener('mousemove', function() {
+               const controls = document.querySelector('.video-controls');
+               controls.style.opacity = '1';
+               
+               clearTimeout(hideControlsTimeout);
+               
+               if (!video.paused) {
+                   hideControlsTimeout = setTimeout(() => {
+                       controls.style.opacity = '0';
+                   }, 2000);
+               }
+           });
+
+           // Prevent controls from hiding when hovering over buttons
+           playPauseBtn.addEventListener('mouseenter', function() {
+               clearTimeout(hideControlsTimeout);
+           });
+
+           muteBtn.addEventListener('mouseenter', function() {
+               clearTimeout(hideControlsTimeout);
+           });
+       });
+   </script>
+</body>
+</html>

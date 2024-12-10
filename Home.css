@@ -258,8 +258,9 @@
   }
 }
 
+
  .u-section-1-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/man-hanging-out-with-robot.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/powerflightt.jpg");
   background-position: 50% 22.36%;
 }
 
@@ -1371,8 +1372,9 @@
 }
 
 .u-section-5 .u-image-2 {
+  
   min-height: 539px;
-  background-image: url("images/pixlr-image-generator-d5b6397a-4142-473c-80e3-a002af40f001.png");
+  /* background-image: url("images/pixlr-image-generator-d5b6397a-4142-473c-80e3-a002af40f001.png"); */
   background-position: 50% 50%;
 }
 
@@ -1568,7 +1570,7 @@
   .u-section-5 .u-text-2 {
     margin-top: 24px;
     margin-right: 20px;
-    margin-bottom: -232px;
+    margin-bottom: -300px;
   }
 
   .u-section-5 .u-layout-cell-3 {
@@ -2396,5 +2398,195 @@
 @media (max-width: 575px) {
   .u-section-9 .u-sheet-1 {
     min-height: 15px;
+  }
+}
+
+.exdronee{
+  padding: 80px;
+}
+
+
+
+.video-section {
+  display: flex;
+  align-items: center; /* Changed from align-content to align-items */
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  margin: 0 auto 40px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Changed from fill to contain */
+  background: black; 
+}
+
+.video-controls {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.video-container:hover .video-controls {
+  opacity: 1 !important;
+}
+
+/* Center play/pause button */
+.play-pause-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.play-pause-btn i {
+  position: relative;
+  color: white;
+  font-size: 50px;
+  left: 2px;
+}
+
+/* Bottom right mute button */
+.mute-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.mute-btn i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Progress bar container */
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar {
+  height: 100%;
+  background: #fff;
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+/* Hover effects for buttons */
+.play-pause-btn:hover,
+.mute-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .play-pause-btn {
+      width: 60px;
+      height: 60px;
+  }
+
+  .play-pause-btn i {
+      font-size: 40px;
+  }
+
+  .mute-btn {
+      width: 35px;
+      height: 35px;
+      bottom: 15px;
+      right: 15px;
+  }
+
+  .mute-btn i {
+      font-size: 18px;
+  }
+}
+
+@media (min-width: 1451px) {
+  .video-container {
+    width: 50%;  /* Reduced width for larger screens */
+    max-width: 1200px;
+    padding-bottom: 28.125%; /* 56.25% * 0.5 to maintain aspect ratio at 50% width */
+    margin: 50px auto;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1450px) {
+  .video-container {
+    width: 69%;
+    max-width: 1000px;
+    padding-bottom: 38.59%; /* 56.25% * 0.6 to maintain aspect ratio at 60% width */
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .video-container {
+     width: 60%;
+    max-width: 1000px;
+    padding-bottom: 33.5%; /* 56.25% * 0.6 to maintain aspect ratio at 60% width */
+    margin: 50px auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .video-container {
+    width: 81%;
+    padding-bottom: 45.25%; /* 56.25% * 0.8 */
+  }
+}
+
+@media (max-width: 767px) {
+  .video-container {
+    width: 97%;
+    padding-bottom: 54.56%; /* 56.25% * 0.97 */
+  }
+}
+
+@media (max-width: 575px) {
+  .video-container {
+    width: 95%;
+    padding-bottom: 53.44%; /* 56.25% * 0.95 */
   }
 }

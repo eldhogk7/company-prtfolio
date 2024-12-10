@@ -1334,6 +1334,7 @@ li {
 .phone-nav-icons .bx-search{
 	font-size: 18px;
 	color: rgb(112, 112, 112);
+	cursor: pointer;
 }
 .phone-nav-icons .bx-menu{
 	font-size: 23px;
