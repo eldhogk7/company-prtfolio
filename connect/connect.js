@@ -79,106 +79,63 @@ function fillmessage(selectedValue) {
 
 // onclick="submitForm()"
 
+
+
+
+
+
+
+                                    
 function submitForm() {
     var name_id = encodeURIComponent(document.getElementById('name-3d90').value);
     var phn_id = encodeURIComponent(document.getElementById('phone-b074').value);
     var email_id = encodeURIComponent(document.getElementById('email-3d90').value);
-    var subject_id = encodeURIComponent(document.getElementById('text-c261').value);
+    var subject = encodeURIComponent(document.getElementById('text-c261').value);
     var msg_id = encodeURIComponent(document.getElementById('message-3d90').value);
-    // var err_msg_form = document.getElementById("err_msg_form");
-
-    // var name_id1 = document.getElementById('name-id');
-    // var phn_id1 = document.getElementById('phn-id');
-    // var email_id1 = document.getElementById('email-id');
-    // var subject_id1 = document.getElementById('subject-id');
-    // var msg_id1 = document.getElementById('msg-id');
-
-
+    var message = `email=${email_id}\nname=${name_id}\nphone=${phn_id}\nmessage=${msg_id}\n`;
     // Check if the form is valid
-    if (name_id !== '') {
-        if (phn_id !== '') {
-            if (email_id !== '') {
-                if (subject_id !== '') {
-                    if (msg_id !== '') {
-                        var queryString = "name-id=" + name_id + "&phn-id=" + phn_id + "&email-id=" + email_id + "&subject-id=" + subject_id + "&msg-id=" + msg_id;
+    if (name_id !== '' && email_id !== '' && msg_id !== '') {
+        // Create the payload object
+        var payload = {
+            subject: subject,
+            message: message
+        };
 
-                        // Create an XMLHTTPRequest object
-                        var xhr = new XMLHttpRequest();
+        // Create an XMLHTTPRequest object
+        var xhr = new XMLHttpRequest();
 
-                        // Define the request method and URL
-                        xhr.open('GET', 'mail.php?' + queryString, true);
+        // Define the request method and URL
+        xhr.open('POST', 'https://benevolent-brigadeiros-fb8761.netlify.app/.netlify/functions/sendMail', true); // Update the URL to your function
 
-                        // Set up the callback function to handle the response
-                        xhr.onreadystatechange = function () {
-                            if (xhr.readyState === 4) {
-                                if (xhr.status === 200) {
-                                    // Handle the response here if needed
-                                    console.log(xhr.responseText);
-                                    document.getElementById("suc_msg").style.display = "block";
-                                    document.getElementById("mail_form").reset;
-                                    document.getElementById("close-icon");
-                                } else {
-                                    // Handle error
-                                    console.error('Error: ' + xhr.status);
-                                    document.getElementById("err_msg").style.display = "block";
-                                    document.getElementById("mail_form").reset;
-                                    document.getElementById("close-icon");
-                                }
-                            }
-                        };
+        // Set the request header
+        xhr.setRequestHeader('Content-Type', 'application/json');
 
-                        // Send the GET request
-                        xhr.send();
+        // Set up the callback function to handle the response
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    // Handle the successful response
+                    console.log(xhr.responseText);
+                    document.getElementById("suc_msg").style.display = "block";
+                    document.getElementById("mail_form").reset;
+                    document.getElementById("close-icon");
+                } else {
+                    // Handle error
+                    console.error('Error: ' + xhr.status);
+                    document.getElementById("err_msg").style.display = "block";
+                    document.getElementById("mail_form").reset;
+                    document.getElementById("close-icon");
+                }
+            }
+        };
 
-                    } 
-                    // else {
-                    //     err_msg_form.style.display = "flex";
-                    //     err_msg_form.innerText = "Please fill in the Message Box";
-                    //     msg_id1.focus();
-                    // }
-                } 
-                // else {
-                //     err_msg_form.style.display = "flex";
-                //     err_msg_form.innerText = "Please fill in the field Subject";
-                //     subject_id1.focus();
-                // }
-            } 
-            // else {
-            //     err_msg_form.style.display = "flex";
-            //     err_msg_form.innerText = "Please fill in the field Email";
-            //     email_id1.focus();
-            // }
-        } 
-        // else {
-        //     err_msg_form.style.display = "flex";
-        //     err_msg_form.innerText = "Please fill in the field Phone";
-        //     phn_id1.focus();
-        // }
-    } 
-    // else {
-    //     err_msg_form.style.display = "flex";
-    //     err_msg_form.innerText = "Please fill in the field Name";
-    //     name_id1.focus();
-    // }
+        // Send the POST request with the JSON payload
+        xhr.send(JSON.stringify(payload));
+    }
 }
 
 
 
-// document.getElementById("name-id").addEventListener("input", function () {
-//     document.getElementById("err_msg_form").style.display = "none";
-// });
-// document.getElementById("phn-id").addEventListener("input", function () {
-//     document.getElementById("err_msg_form").style.display = "none";
-// });
-// document.getElementById("email-id").addEventListener("input", function () {
-//     document.getElementById("err_msg_form").style.display = "none";
-// });
-// document.getElementById("subject-id").addEventListener("input", function () {
-//     document.getElementById("err_msg_form").style.display = "none";
-// });
-// document.getElementById("msg-id").addEventListener("input", function () {
-//     document.getElementById("err_msg_form").style.display = "none";
-// });
 
 function close_click_fun(){
     document.getElementById("suc_msg").style.display = "none";
