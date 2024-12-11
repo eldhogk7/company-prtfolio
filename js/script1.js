@@ -240,7 +240,8 @@ window.onresize = handleWindowSize;
 
 function hidesearchbar(){
     console.log('hiding')
-    document.querySelector(".nav-search-bar").style.display = "none";
+    const navSearchBar = document.querySelector(".nav-search-bar");
+    navSearchBar.classList.remove('visible');
     document.body.style.overflow = "hidden";
     if(window.innerWidth > 991){
         if (document.body.scrollTop > 30 || (document.documentElement.scrollTop > 30)) {
