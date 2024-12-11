@@ -257,7 +257,8 @@ function showsearchbar(){
    
         nav_Element.style.display = "none";
     });
-    document.querySelector(".nav-search-bar").style.display = "flex";
+    const navSearchBar = document.querySelector(".nav-search-bar");
+    navSearchBar.classList.add('visible');
     document.body.style.overflow = "hidden";
     document.querySelector(".my-nav").style.backgroundColor= "transparent";
     // document.getElementById("search-input").focus();
