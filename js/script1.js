@@ -264,33 +264,37 @@ function showsearchbar(){
 }
 
 function mySearchFunction() {
-    showsearchbar()
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('search-input');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("my-search-ul");
-    li = ul.getElementsByTagName('li');
   
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-        document.querySelector(".search-result").style.display = "none";
-      } else {
-        li[i].style.display = "none";
-        document.querySelector(".search-result").style.display = "flex";
-      }
-    }
-  }
+    
+    const input = document.querySelector('.search-bar input'); // Get the input element
+    const filter = input.value.toUpperCase(); // Get the input value and convert to uppercase
+    const ul = document.getElementById("my-search-ul"); // Get the list
+    const li = ul.getElementsByTagName("li"); // Get all list items
+    let hasMatches = false; // Flag to track if there are matches
 
-//   function pdispfun_sub(idname, sectionId) {
-//     // Redirect to another page with parameters
-//     var redirectUrl = "products/index.html?id=" + encodeURIComponent(idname) + "&section=" + encodeURIComponent(sectionId);
-//     window.location.href = redirectUrl;
-// }
+    for (let i = 0; i < li.length; i++) {
+        const a = li[i].getElementsByTagName("a")[0]; // Get the anchor tag
+        const txtValue = a.textContent || a.innerText; // Get text content of the link
+
+        // Check if the text matches the filter
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = ""; // Show the matched item
+            hasMatches = true; // Set flag to true
+        } else {
+            li[i].style.display = "none"; // Hide the non-matched item
+        }
+    }
+
+    // Show or hide the search result message
+    const searchResultMessage = document.querySelector('.search-result'); // Adjust as necessary
+    if (hasMatches) {
+        searchResultMessage.style.display = "flex"; // Show message if matches found
+    } else {
+        searchResultMessage.style.display = "none"; // Hide message if no matches found
+    }
+}
+
+
 function contact_fill(idname) {
     // Redirect to another page with a single parameter
     var redirectUrl = "../connect/index.html?id=" + encodeURIComponent(idname)+"#mail";

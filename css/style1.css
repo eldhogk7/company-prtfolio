@@ -151,6 +151,7 @@ body::-webkit-scrollbar {
 	font-size: 14px;
 	/* color: #505050; */
 	color: white;
+	cursor: pointer;
   }
 
   .fa-magnifying-glass{
@@ -490,6 +491,7 @@ body::-webkit-scrollbar {
 	padding-left: 10px;
 }
 .nav-search-bar .search-bar{
+	
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
