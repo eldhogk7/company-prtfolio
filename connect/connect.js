@@ -87,21 +87,23 @@ function fillmessage(selectedValue) {
 
                                     
 function submitForm() {
-    var name_id = encodeURIComponent(document.getElementById('name-3d90').value);
-    var phn_id = encodeURIComponent(document.getElementById('phone-b074').value);
-    var email_id = encodeURIComponent(document.getElementById('email-3d90').value);
-    var subject = encodeURIComponent(document.getElementById('text-c261').value);
-    var msg_id = encodeURIComponent(document.getElementById('message-3d90').value);
+    var name_id = decodeURIComponent(encodeURIComponent(document.getElementById('name-3d90').value));
+    var phn_id = decodeURIComponent(encodeURIComponent(document.getElementById('phone-b074').value));
+    var email_id = decodeURIComponent(encodeURIComponent(document.getElementById('email-3d90').value));
+    var subject = decodeURIComponent(encodeURIComponent(document.getElementById('text-c261').value));
+    var msg_id = decodeURIComponent(encodeURIComponent(document.getElementById('message-3d90').value));
+        
     var message = `email=${email_id}\nname=${name_id}\nphone=${phn_id}\nmessage=${msg_id}\n`;
     // Check if the form is valid
     if (name_id !== '' && email_id !== '' && msg_id !== '') {
+        document.querySelector(".u-btn-submit").style.display = "none";
+       
         // Create the payload object
         var payload = {
             subject: subject,
             message: message
         };
 
-        // Create an XMLHTTPRequest object
         var xhr = new XMLHttpRequest();
 
         // Define the request method and URL
@@ -117,13 +119,13 @@ function submitForm() {
                     // Handle the successful response
                     console.log(xhr.responseText);
                     document.getElementById("suc_msg").style.display = "block";
-                    document.getElementById("mail_form").reset;
+                    document.getElementById("mail_form").reset();
                     document.getElementById("close-icon");
                 } else {
                     // Handle error
                     console.error('Error: ' + xhr.status);
                     document.getElementById("err_msg").style.display = "block";
-                    document.getElementById("mail_form").reset;
+                    document.getElementById("mail_form").reset();
                     document.getElementById("close-icon");
                 }
             }
@@ -131,6 +133,9 @@ function submitForm() {
 
         // Send the POST request with the JSON payload
         xhr.send(JSON.stringify(payload));
+    }
+    else{
+        alert("Please fill all the fields")
     }
 }
 
@@ -140,6 +145,5 @@ function submitForm() {
 function close_click_fun(){
     document.getElementById("suc_msg").style.display = "none";
     document.getElementById("err_msg").style.display = "none";
-    var redirectUrl = "index.html";
-    // window.location.href = redirectUrl;
+   
 }

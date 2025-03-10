@@ -148,6 +148,5 @@ function submitForm() {
 function close_click_fun(){
     document.getElementById("suc_msg").style.display = "none";
     document.getElementById("err_msg").style.display = "none";
-    var redirectUrl = "index.html";
-    // window.location.href = redirectUrl;
+   
 }

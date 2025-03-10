@@ -9,6 +9,7 @@ function submitForm() {
     var message = `email=${email_id}\nname=${name_id}\nmessage=${msg_id}\n`;
     // Check if the form is valid
     if (name_id !== '' && email_id !== '' && msg_id !== '') {
+        document.querySelector(".u-btn-submit").style.display = "none";
         // Create the payload object
         var payload = {
             subject: subject,
@@ -46,6 +47,9 @@ function submitForm() {
         // Send the POST request with the JSON payload
         xhr.send(JSON.stringify(payload));
     }
+    else{
+        alert("Please fill all the fields")
+    }
 }
 
 
@@ -55,6 +59,5 @@ function close_click_fun(){
     document.getElementById("suc_msg").style.display = "none";
     document.getElementById("err_msg").style.display = "none";
     document.querySelector(".u-btn-submit").style.display = "";
-    var redirectUrl = "index.html";
-    window.location.href = redirectUrl;
+   
 }
