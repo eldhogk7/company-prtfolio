@@ -901,14 +901,24 @@ elevating your projects to new levels."</p>
     }
 }
 
-    function isSocialMediaApp() {
-        let ua = navigator.userAgent.toLowerCase();
-        return (
-            ua.includes("fbav") ||   // Facebook
-            ua.includes("instagram") || // Instagram
-            ua.includes("telegram") // Telegram
-        );
-    }
+function isSocialMediaApp() {
+    let ua = navigator.userAgent.toLowerCase();
+    
+    // More comprehensive check for social media in-app browsers
+    return (
+        ua.includes("fbav") ||          // Facebook app
+        ua.includes("fban") ||          // Facebook app alternative identifier
+        ua.includes("instagram") ||     // Instagram app
+        ua.includes("telegram") ||      // Telegram app (might be unreliable)
+        ua.includes("tgweb") ||         // Telegram web app
+        ua.includes("t.me") ||          // Telegram short domain
+        
+        // Detect Telegram WebView pattern
+        (ua.includes("webkit") && 
+         document.referrer.includes("telegram") || 
+         window.external?.notify !== undefined)
+    );
+}
 
     function showAlertIfSocialApp() {
     if (isSocialMediaApp() && !sessionStorage.getItem("redirectedOnce")) {
