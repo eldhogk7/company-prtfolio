@@ -83,7 +83,7 @@
     </style>
     
   </head>
-  <body  data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="en" onload="showAlertIfSocialApp()">
+  <body  data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="en" >
     
 
     <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
@@ -911,12 +911,15 @@ elevating your projects to new levels."</p>
     }
 
     function showAlertIfSocialApp() {
-        if (isSocialMediaApp()) {
-          openExternal();
-        }
+    if (isSocialMediaApp() && !sessionStorage.getItem("redirectedOnce")) {
+        sessionStorage.setItem("redirectedOnce", "true"); // Set flag
+        openExternal();
     }
+}
 
-    
+// Call the function only once per session
+showAlertIfSocialApp();
+
 
   </script>
 
