@@ -877,15 +877,20 @@ elevating your projects to new levels."</p>
         return;
     }
     
-    // For Android
+    // For Android - revised approach
     if (navigator.userAgent.match(/android/i)) {
-        // Try intent URL format for Chrome
-        const intent = `intent:${url}#Intent;scheme=https;package=com.android.chrome;end`;
-        window.location.href = intent;
+        // Try the universal method first
+        window.location.href = 'intent://' + url.replace(/^https?:\/\//, '') + '#Intent;scheme=https;package=com.android.chrome;end';
         
-        // Fallback
+        // Alternative approach with a timeout
         setTimeout(function() {
-            window.location.href = url;
+            // Try direct external URL
+            window.location.href = 'googlechrome://navigate?url=' + encodeURIComponent(url);
+            
+            // Final fallback
+            setTimeout(function() {
+                window.location.href = url;
+            }, 300);
         }, 300);
         return;
     }
