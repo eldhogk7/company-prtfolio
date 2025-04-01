@@ -861,15 +861,45 @@ elevating your projects to new levels."</p>
   <!-- <script src="../js/aos.js"></script>AOS on Animation Scroll -->
   <script src="js/script1.js"></script>  <!-- Custom scripts -->
   <script>
-     function openExternal() {
-        let url = window.location.href;
-        let newTab = window.open(url, "_blank");
-
-        // If pop-ups are blocked, fallback to setting window.location
-        if (!newTab || newTab.closed || typeof newTab.closed === "undefined") {
+    function openExternal() {
+    // Get the current URL
+    const url = window.location.href;
+    
+    // For iOS
+    if (navigator.userAgent.match(/iphone|ipod|ipad/i)) {
+        // Try using special Safari schemes
+        window.location.href = 'safari-' + url;
+        
+        // Fallback if above doesn't work
+        setTimeout(function() {
+            window.location.href = url;
+        }, 300);
+        return;
+    }
+    
+    // For Android
+    if (navigator.userAgent.match(/android/i)) {
+        // Try intent URL format for Chrome
+        const intent = `intent:${url}#Intent;scheme=https;package=com.android.chrome;end`;
+        window.location.href = intent;
+        
+        // Fallback
+        setTimeout(function() {
+            window.location.href = url;
+        }, 300);
+        return;
+    }
+    
+    // General fallback for other platforms
+    try {
+        const newTab = window.open(url, '_system') || window.open(url, '_blank');
+        if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
             window.location.href = url;
         }
+    } catch (e) {
+        window.location.href = url;
     }
+}
 
     function isSocialMediaApp() {
         let ua = navigator.userAgent.toLowerCase();
