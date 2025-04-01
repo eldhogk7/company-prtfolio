@@ -861,14 +861,12 @@ elevating your projects to new levels."</p>
     const url = window.location.href;
     
     // For iOS
-    if (navigator.userAgent.match(/iphone|ipod|ipad/i)) {
-        // Try using special Safari schemes
-        window.location.href = 'safari-' + url;
-        
-        // Fallback if above doesn't work
-        setTimeout(function() {
+    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      alert(navigator.userAgent);
+        const newTab = window.open(url, '_blank');
+        if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
             window.location.href = url;
-        }, 300);
+        }
         return;
     }
     
@@ -903,6 +901,7 @@ elevating your projects to new levels."</p>
 
     function isSocialMediaApp() {
         let ua = navigator.userAgent.toLowerCase();
+        
         
 
         return (
