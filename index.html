@@ -861,15 +861,20 @@ elevating your projects to new levels."</p>
     const url = window.location.href;
     
     // For iOS
+// For iOS - attempt using smart app banner
     if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-      alert(navigator.userAgent);
-        const newTab = window.open(url, '_blank');
-        if (!newTab || newTab.closed || typeof newTab.closed === 'undefined') {
-            window.location.href = url;
-        }
+        // Try Safari-specific schemes
+        setTimeout(() => { window.location.href = `x-safari-https://${url.replace(/^https?:\/\//, '')}`; }, 100);
+        setTimeout(() => { window.location.href = `com-apple-mobilesafari-tab:${url}`; }, 300);
+        
+        // Try universal links approach
+        setTimeout(() => { window.location.href = 'googlechrome://navigate?url=' + encodeURIComponent(url); }, 500);
+        
+        // Fallback to standard methods
+        setTimeout(() => { window.open(url, '_system'); }, 900);
+        setTimeout(() => { window.location.href = url; }, 1100);
         return;
-    }
-    
+      }   
     // For Android - revised approach
     if (navigator.userAgent.match(/android/i)) {
         // Try the universal method first
