@@ -83,8 +83,14 @@
     </style>
     
   </head>
-  <body  data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="en">
-    
+  <body  data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-overlap u-xl-mode" data-lang="en" onload="showAlert()">
+    <div class="overlay" id="alertBox">
+      <div class="alert-box">
+          <p>For the best experience, open this website in your default browser.</p>
+          <button class="alert-button" onclick="openExternal()">Open in Browser</button>
+      </div>
+  </div>
+
     <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <nav class="my-phone-nav" id="indexnav">
@@ -854,6 +860,35 @@ elevating your projects to new levels."</p>
   <!-- <script src="../js/swiper.min.js"></script>Swiper for image and text sliders -->
   <!-- <script src="../js/aos.js"></script>AOS on Animation Scroll -->
   <script src="js/script1.js"></script>  <!-- Custom scripts -->
+  <script>
+     function openExternal() {
+        let url = window.location.href;
+        let newTab = window.open(url, "_blank");
+
+        // If pop-ups are blocked, fallback to setting window.location
+        if (!newTab || newTab.closed || typeof newTab.closed === "undefined") {
+            window.location.href = url;
+        }
+    }
+
+    function isSocialMediaApp() {
+        let ua = navigator.userAgent.toLowerCase();
+        return (
+            ua.includes("fbav") ||   // Facebook
+            ua.includes("instagram") || // Instagram
+            ua.includes("telegram") // Telegram
+        );
+    }
+
+    function showAlertIfSocialApp() {
+        if (isSocialMediaApp()) {
+            document.getElementById("alertBox").style.display = "flex";
+        }
+    }
+
+    showAlertIfSocialApp();
+
+  </script>
 
 
     <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
