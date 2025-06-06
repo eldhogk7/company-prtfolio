@@ -1,5 +1,5 @@
-html,body{
-  background-color: white;
+:root,html,body{
+  background-color: white !important;
   overscroll-behavior: none;
 } 
 .u-block-d48f-2 {
