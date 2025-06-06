@@ -309,13 +309,13 @@ function contact_fill(idname) {
     const video = document.getElementById('myVideo');
     const playPauseBtn = document.querySelector('.play-pause-btn');
     const muteBtn = document.querySelector('.mute-btn');
-    const playIcon = playPauseBtn.querySelector('i');
-    const muteIcon = muteBtn.querySelector('i');
+    const playIcon = playPauseBtn?.querySelector('i');
+    const muteIcon = muteBtn?.querySelector('i');
     const progressBar = document.querySelector('.progress-bar');
     const controls=document.getElementById('controls')
 
     // Play/Pause functionality
-    playPauseBtn.addEventListener('click', function() {
+    playPauseBtn?.addEventListener('click', function() {
         if (video.paused) {
             video.play();
             controls.style.opacity=0
@@ -332,12 +332,12 @@ function contact_fill(idname) {
     });
 
     // Clicking on video also toggles play/pause
-    video.addEventListener('click', function() {
+    video?.addEventListener('click', function() {
         playPauseBtn.click();
     });
 
     // Mute functionality
-    muteBtn.addEventListener('click', function() {
+    muteBtn?.addEventListener('click', function() {
         if (video.muted) {
             video.muted = false;
             muteIcon.classList.remove('bx-volume-mute');
@@ -350,13 +350,13 @@ function contact_fill(idname) {
     });
 
     // Update progress bar
-    video.addEventListener('timeupdate', function() {
+    video?.addEventListener('timeupdate', function() {
         const progress = (video.currentTime / video.duration) * 100;
         progressBar.style.width = progress + '%';
     });
 
     // Update play/pause icon when video ends
-    video.addEventListener('ended', function() {
+    video?.addEventListener('ended', function() {
         playIcon.classList.remove('bx-pause');
         playIcon.classList.add('bx-play');
         progressBar.style.width = '0%';
@@ -365,7 +365,7 @@ function contact_fill(idname) {
     // Hide controls when video is playing
     let hideControlsTimeout;
     
-    video.addEventListener('mousemove', function() {
+    video?.addEventListener('mousemove', function() {
         const controls = document.querySelector('.video-controls');
         controls.style.opacity = '1';
         
@@ -379,11 +379,11 @@ function contact_fill(idname) {
     });
 
     // Prevent controls from hiding when hovering over buttons
-    playPauseBtn.addEventListener('mouseenter', function() {
+    playPauseBtn?.addEventListener('mouseenter', function() {
         clearTimeout(hideControlsTimeout);
     });
 
-    muteBtn.addEventListener('mouseenter', function() {
+    muteBtn?.addEventListener('mouseenter', function() {
         clearTimeout(hideControlsTimeout);
     });
 });
