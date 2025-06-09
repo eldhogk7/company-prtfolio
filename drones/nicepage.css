@@ -1,9 +1,11 @@
-/*begin-commonstyles library*//*!
- * froala_editor v4.0.6 (https://www.froala.com/wysiwyg-editor)
- * License https://froala.com/wysiwyg-editor/terms/
- * Copyright 2014-2021 Froala Labs
- */
 
+ :root, html, body {
+	background-color: white !important;
+	overscroll-behavior: none;
+	margin: 0;
+	padding: 0;
+  }
+  
 .fr-clearfix::after {
   clear: both;
   display: block;
