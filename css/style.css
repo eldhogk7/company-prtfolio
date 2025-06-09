@@ -15,13 +15,7 @@ Table Of Contents:
 - Extra Pages
 - Media Queries
 ******************************************/
-:root, html, body {
-	background-color: white !important;
-	overscroll-behavior: none;
-	margin: 0;
-	padding: 0;
-  }
-  
+
 
 .custom-cards {
 	width: 152%;

@@ -1,7 +1,6 @@
 
  :root, html, body {
-	background-color: white !important;
-	overscroll-behavior: none;
+	background-color: black !important;
 	margin: 0;
 	padding: 0;
   }
