@@ -1,4 +1,4 @@
- .u-section-1 {
+.u-section-1 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15)), url("images/wepik-export-20240122053910JHQE.png");
   background-position: 50% 50%;
 }
@@ -1352,4 +1352,782 @@
   .u-section-8 .u-text-1 {
     font-size: 1.5rem;
   }
+}
+
+@media (max-width: 480px) {
+  .t15-image-wrapper img {
+    height: auto !important;
+  }
+}
+.py-2,.connect-us{
+  font-family: Roboto, sans-serif !important;
+}
+
+
+
+/* drone new section */
+
+
+.drone-section {
+  /* background: #242424; */
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+.drone-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+      radial-gradient(ellipse at 20% 20%, rgba(0, 150, 255, 0.15) 0%, transparent 40%),
+      radial-gradient(ellipse at 80% 80%, rgba(0, 200, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 50%, rgba(0, 100, 150, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+.t15-card h2{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: normal;
+}
+
+.header .company {
+  font-size: 1.8rem;
+  color: #40e0ff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.hero-drone {
+  text-align: center;
+  position: relative;
+}
+
+.drone-image {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.quote-section {
+  text-align: center;
+  position: relative;
+}
+
+.quote-marks {
+  font-size: 12rem;
+  color: rgba(64, 224, 255, 0.3);
+  line-height: 1;
+}
+
+.quote-marks.left {
+  position: absolute;
+  left: -2rem;
+  top: -1rem;
+}
+
+.quote-marks.right {
+  position: absolute;
+  right: -2rem;
+  bottom: -2rem;
+  transform: rotate(180deg);
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+    font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: normal;
+
+}
+
+.platform-section {
+  margin: 5rem 0;
+}
+
+.platform-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 3rem;
+}
+
+.platform-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.platform-info h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: normal;
+
+}
+
+.platform-info h2 .highlight {
+  color: #40e0ff;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+.N6-highlight{
+  color: #067FF9;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: -1.2rem;
+}
+
+
+.platform-info .subtitle {
+  font-size: 1.5rem;
+  color: #a0c4cc;
+  margin-bottom: 2rem;
+}
+
+.features-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.platform-features li {
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid #067ff9;
+  margin-bottom: 0.5rem;
+  list-style-type: none;
+}
+
+.platform-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #e0f0f5;
+  position: relative;
+}
+
+.platform-description::before,
+.platform-description::after {
+  content: '"';
+  font-size: 2rem;
+  color: rgba(64, 224, 255, 0.4);
+}
+
+.platform-drone {
+  text-align: center;
+}
+
+.platform-drone-image {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  object-fit: contain;
+}
+
+.specs-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4rem;
+  justify-items: center;
+}
+
+.spec-card {
+  background: linear-gradient(to bottom, #0680F9, #0F0F0F);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 
+    0 8px 24px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Bottom shadow overlay */
+.spec-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  border-radius: 0 0 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+.spec-card h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #40e0ff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+
+  font-weight: 600;
+}
+
+.spec-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.spec-bullet {
+  width: 6px;
+  height: 6px;
+  background: #40e0ff;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(64, 224, 255, 0.6);
+}
+.orange{
+  background: #f66003;
+
+}
+
+.red{
+  background: #CF3131;
+}
+
+.spec-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.spec-label {
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .platform-header {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+  }
+  
+  .platform-header .platform-drone {
+      order: -1;
+  }
+
+  .platform-details {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .drone-section {
+      padding: 3rem 1rem;
+      height: 90dvh;
+  }
+
+  .header h1 {
+      font-size: 2rem;
+  }
+
+  .header .company {
+      font-size: 1.4rem;
+  }
+
+  .quote-text {
+      font-size: 1rem;
+      padding: 1rem;
+  }
+
+  .quote-marks {
+      font-size: 3rem;
+  }
+
+  .platform-info h2 {
+      font-size: 3rem;
+  }
+
+  .platform-info .subtitle {
+      font-size: 1.2rem;
+  }
+
+  .specs-section {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+  }
+
+  .spec-card {
+      padding: 1.5rem;
+  }
+
+  .spec-card h3 {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 1.8rem;
+  }
+
+  .header .company {
+      font-size: 1.2rem;
+  }
+
+  .platform-info h2 {
+      font-size: 2.5rem;
+  }
+
+  .quote-marks.left,
+  .quote-marks.right {
+      display: none;
+  }
+}
+
+/* Animation Effects */
+.drone-image,
+.platform-drone-image {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Placeholder styling */
+.drone-image::before,
+.platform-drone-image::before {
+  content: 'Drone Image Placeholder';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(64, 224, 255, 0.7);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  z-index: 1;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.spec-item {
+  transition: all 0.3s ease;
+}
+
+.spec-item:hover {
+  background: rgba(64, 224, 255, 0.08);
+  transform: translateX(3px);
+  border-left-color: #60f0ff;
+}
+
+@media (min-width: 1200px) {
+  .hero-drone {
+      min-width: 850px;
+      min-height: 420px;
+  }
+  
+  .platform-drone {
+      min-width: 750px;
+      min-height: 370px;
+  }
+  
+  .drone-image {
+      max-width: 800px !important;
+      height: 400px !important;
+  }
+  
+  .platform-drone-image {
+      max-width: 700px !important;
+      height: 350px !important;
+  }
+}
+
+
+
+
+/* section2 */
+.drone-hero-section {
+  width: 100%;
+}
+
+.drone-hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.centered-image{
+  display: flex;
+  justify-content: center;
+}
+.drone-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.drone-info-card {
+  background: linear-gradient(to bottom, #ff8c00, #000);
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 420px;
+}
+
+.drone-info-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-style: normal;
+
+}
+
+.drone-info-list {
+  list-style: none;
+}
+
+.drone-info-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.drone-info-list li::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .drone-content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .drone-info-card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* next section */
+
+.t15-section {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.t15-drone-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.t15-highlight {
+  color: #ff3c3c;
+}
+.I9-highlight{
+  color: #006963;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: -1.2rem;
+}
+.N6-highlight{
+  color: #067FF9;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: -1.2rem;
+}
+
+.t15-subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.t15-tags {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.t15-tags span {
+  color: #fff;
+  border-left: 3px solid #ff3c3c ;
+  padding-left: 0.5rem;
+  font-weight: 500;
+}
+
+.t15-description {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  color: #aaa;
+  padding: 1rem;
+  text-align: center;
+}
+
+.t15-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.t15-card {
+  background: linear-gradient(to bottom, #ff3c3c, #000000);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  padding: 1rem;
+  width: 100%;
+  max-width: 420px;
+}
+.I9{
+  background: linear-gradient(to bottom, #006963, #000000);
+}
+.N6{
+  background: linear-gradient(to bottom, #067FF9, #000000);
+
+}
+.green{
+  background: #006963;
+}
+.blue{
+  background: #067FF9;
+}
+.yellow-paltform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.features{
+  margin-top: 50px;
+}
+.yellow-paltform h2{
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.yellow-text{
+  color: #E98000;
+}
+.t15-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.yellow-span{
+  border-left: 3px solid #E98000 !important;
+  padding-left: 0.5rem;
+}
+.red-span{
+  border-left: 3px solid #EC3838 !important;
+ 
+}
+.blue-span{
+  border-left: 3px solid #067FF9 !important;
+
+}
+.t15-card ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.t15-card ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.t15-card ul li::before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .t15-drone-title {
+    font-size: 2rem;
+  }
+
+  .t15-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* .t15-card {
+    width: 90%;
+  } */
+}
+.t15-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  position: relative;
+}
+
+.t15-image-wrapper {
+  /* flex: 1 1 400px; */
+  max-width: 600px;
+  position: relative;
+}
+
+.t15-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (min-width: 768px) {
+  .n9-image img{
+  width: 60% !important;
+}
+.drone-hero-image{
+  width: 60%;
+}
+.n9-image{
+  display: flex;
+  justify-content: center;
+}
+}
+.t15-text-content {
+  flex: 1 1 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  position: relative;
+  margin-top: 2rem;
+  height: 350px;
+
+  align-items: center;
+}
+
+.t15-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.t15-highlight {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ff3c3c;
+  margin-top: -1.2rem;
+}
+
+.t15-subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 0.5rem 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .t15-layout {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .t15-text-content {
+    margin-top: 1rem;
+    align-items: center;
+  }
+
+  .t15-heading,
+  .t15-subtitle {
+    text-align: center;
+  }
+
+  .t15-highlight {
+    font-size: 4rem;
+    margin-top: -0.5rem;
+  }
+}
+
+
+/* last section */
+
+.g-one-description {
+  font-family: "Kdam Thmor Pro", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #00e0d0;
+  text-shadow: 0 0 5px rgba(0, 224, 208, 0.4), 0 0 10px rgba(0, 224, 208, 0.3);
+  line-height: 1.6;
 }
