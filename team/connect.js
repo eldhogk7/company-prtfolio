@@ -87,7 +87,7 @@ function submitForm() {
     var email_id = encodeURIComponent(document.getElementById('email-3d90').value);
     var subject_id = encodeURIComponent(document.getElementById('text-c261').value);
     var msg_id = encodeURIComponent(document.getElementById('message-3d90').value);
-    var message = `email=${email_id}\nname=${name_id}\nphone=${phn_id}\nmessage=${msg_id}\n`;
+    var message = `data from Abhram Site \n\nemail=${email_id}\nname=${name_id}\nphone=${phn_id}\nmessage=${msg_id}\n`;
     if (name_id !== '' && email_id !== '' && msg_id !== '') {
         // Create the payload object
         var payload = {
@@ -99,7 +99,7 @@ function submitForm() {
         var xhr = new XMLHttpRequest();
 
         // Define the request method and URL
-        xhr.open('POST', 'https://benevolent-brigadeiros-fb8761.netlify.app/.netlify/functions/sendMail', true); // Update the URL to your function
+        xhr.open('POST', 'https://685e5e36e802b899737ac27c--ibfm.netlify.app/.netlify/functions/sendMail', true); // Update the URL to your function
 
         // Set the request header
         xhr.setRequestHeader('Content-Type', 'application/json');

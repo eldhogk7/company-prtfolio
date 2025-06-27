@@ -5,7 +5,7 @@ function submitForm() {
     var name_id = document.getElementById('name-e4cc').value;
     var email_id = document.getElementById('email-e4cc').value;
     var msg_id = document.getElementById('message-e4cc').value;
-    var subject='client enquiry'
+    var subject='client enquiry data from abhram site'
     var message = `email=${email_id}\nname=${name_id}\nmessage=${msg_id}\n`;
     // Check if the form is valid
     if (name_id !== '' && email_id !== '' && msg_id !== '') {
@@ -20,7 +20,7 @@ function submitForm() {
         var xhr = new XMLHttpRequest();
 
         // Define the request method and URL
-        xhr.open('POST', 'https://benevolent-brigadeiros-fb8761.netlify.app/.netlify/functions/sendMail', true); // Update the URL to your function
+        xhr.open('POST', 'https://685e5e36e802b899737ac27c--ibfm.netlify.app/.netlify/functions/sendMail', true); // Update the URL to your function
 
         // Set the request header
         xhr.setRequestHeader('Content-Type', 'application/json');
