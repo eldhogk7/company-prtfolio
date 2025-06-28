@@ -1917,7 +1917,9 @@
   padding-left: 0.5rem;
   font-weight: 500;
 }
-
+.n6-content,.t15-content{
+  padding: 1rem;
+}
 .t15-description {
   max-width: 800px;
   margin: 0 auto 2rem;
