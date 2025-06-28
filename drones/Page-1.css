@@ -1939,7 +1939,7 @@
   background: linear-gradient(to bottom, #ff3c3c, #000000);
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.6);
-  padding: 1rem;
+  padding: 2rem 2.5rem;
   width: 100%;
   max-width: 420px;
 }
