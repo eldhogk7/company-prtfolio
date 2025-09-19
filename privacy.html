@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Privacy Policy | Abhram Technologies</title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Read Abhram Technologies' Privacy Policy to understand how we collect, use, and protect your information. Your privacy is important to us." />
+<meta name="keywords" content="privacy policy, data protection, Abhram Technologies, information security" />
+<meta property="og:title" content="Privacy Policy | Abhram Technologies" />
+<meta property="og:description" content="Read Abhram Technologies' Privacy Policy to understand how we collect, use, and protect your information. Your privacy is important to us." />
+<meta property="og:url" content="https://www.abhram.com/privacy.html" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://www.abhram.com/assets/images/icon.png" />
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <!-- <link href="./css/aos.min.css" rel="stylesheet"> -->
+    <!-- <link href="./css/swiper.css" rel="stylesheet"> -->
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..."crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/icon.png">
+</head>
+<body>
+    
+   <!-- Navigation -->
+   <nav id="navbar" style="display: none;" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+    
+
+        
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+
+        </button>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown0" data-bs-toggle="dropdown" aria-expanded="false" href="#">Products</a>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" href="article.html">CoM</a></li>
+                        <!-- <li><div class="dropdown-divider"></div></li>  -->
+                        <li><a class="dropdown-item" href="terms.html">SoM</a></li>
+                        <!-- <li><div class="dropdown-divider"></div></li>  -->
+                        <li><a class="dropdown-item" href="privacy.html">3</a></li>
+                        <!-- <li><div class="dropdown-divider"></div></li>  -->
+                        <li><a class="dropdown-item" href="privacy.html">4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Services</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#about">R & D</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">R & D</a>
+                    
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" href="article.html">CoM</a></li>
+                        <!-- <li><div class="dropdown-divider"></div></li>  -->
+                        <li><a class="dropdown-item" href="terms.html">SoM</a></li>
+                        <!-- <li><div class="dropdown-divider"></div></li>  -->
+                        <li><a class="dropdown-item" href="privacy.html">3</a></li>
+                        <!-- <li><div class="dropdown-divider"></div></li>  -->
+                        <li><a class="dropdown-item" href="privacy.html">4</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Connect Us</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#services">search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#plans">Store</a>
+                </li> -->
+            </ul>
+            <span style="display:flex;justify-content:center;align-items:center; background: rgba(255, 255, 255, 0.973); border-radius:150px; padding:11px 26px 7px 16px;" class="nav-item social-icons">
+                <span id="search-bar-custom" class="fa-stack">
+                    <input list="browsers" name="browser" id="browser" oninput="filterOptions()">
+                        <datalist id="browsers"></datalist>
+
+                        <script>
+                        const browserInput = document.getElementById('browser');
+                        const datalist = document.getElementById('browsers');
+                        
+                        const browserOptions = [
+                            { value: 'Edge', link: 'https://www.microsoft.com/edge' },
+                            { value: 'Chrome', link: 'https://www.google.com/chrome/' },
+                            { value: 'Opera', link: 'https://www.opera.com/' },
+                            { value: 'Safari', link: 'https://www.apple.com/safari/' },
+                            { value: 'Firefox', link: 'https://www.mozilla.org/firefox/' },
+                        ];
+
+                        function filterOptions() {
+                            const inputValue = browserInput.value.toLowerCase();
+                            const filteredOptions = browserOptions.filter(option => option.value.toLowerCase().includes(inputValue));
+                            
+                            // Clear previous options
+                            datalist.innerHTML = '';
+
+                            // Add filtered options
+                            filteredOptions.forEach(option => {
+                            const optionElement = document.createElement('option');
+                            optionElement.value = option.value;
+                            datalist.appendChild(optionElement);
+                            });
+                        }
+
+                        // Handle click on an option
+                        browserInput.addEventListener('change', () => {
+                            const selectedOption = browserOptions.find(option => option.value === browserInput.value);
+                            if (selectedOption) {
+                            window.location.href = selectedOption.link;
+                            }
+                        });
+                        </script>
+                </span>
+                <span class="fa-stack">
+                    <!-- <a href="#your-link"> -->
+                        <!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+                        <i style="font-size: 17px; color: black;" class="fa-solid fa-magnifying-glass"></i>
+                        <script>
+                            const searchInput = document.getElementById('search-bar-custom');
+                            const magnifyingGlass = document.querySelector('.fa-magnifying-glass');
+                        
+                            magnifyingGlass.addEventListener('click', function (e) {
+                              e.stopPropagation();
+                              if (searchInput.style.display === 'none' || searchInput.style.display === '') {
+                                searchInput.style.display = 'flex';
+                                document.getElementById("browser").focus();
+                              } else {
+                                searchInput.style.display = 'none';
+                              }
+                            });
+                        
+                            document.addEventListener('click', function (e) {
+                              if (!searchInput.contains(e.target) && searchInput.style.display === 'flex') {
+                                searchInput.style.display = 'none';
+                              }
+                            });
+                          </script>
+                    <!-- </a> -->
+                </span>
+                <span class="fa-stack">
+                    <a href="#your-link">
+                        <!-- <i class="fas fa-circle fa-stack-2x"></i> -->
+                        <!-- <i style="margin-left: 10px; font-size: 22px; color: black;" class='bx bx-store-alt'></i> -->
+                        <!-- <i style="margin-left: 2px; font-size: 17px; color: black;" class="fa-solid fa-store"></i> -->
+                    </a>
+                </span>
+            </span>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<nav class="my-phone-nav">
+    <div class="phone-nav-container">
+        <div class="phone-nav-logo"><a class="my-logo-text" href="index.html">Abhram<br>Technologies</a></div>
+        <div class="phone-nav-icons">
+            <ul>
+                <li onclick="showsearchbar()" class="phone-list-icon"><i class='bx bx-search'></i></li>
+                <!-- <li class="phone-list-icon"><a href="store/index.html" class="my-icon-a"><i class='bx bx-store' ></i></a></li> -->
+                <li onclick="onmenuclick();" class="phone-list-icon"><i class='bx bx-menu' ></i></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="phone-menu-open">
+    <i onclick="onmenuclose();" class="fa-solid fa-xmark"></i>
+    <div class="menu-container-inner">
+        <ul>
+            <!-- <li onclick="showdivsubs('phone-menu-open-sub1');" class="menu-inner-list">Products</li>
+            <li onclick="showdivsubs('phone-menu-open-sub2');" class="menu-inner-list">Services</li>
+            <li onclick="showdivsubs('phone-menu-open-sub3');" class="menu-inner-list">R & D</li> -->
+            <li class="menu-inner-list"><a href="/index.html">Home</a></li>
+            <!-- <li class="menu-inner-list"><a href="iot/index.html">IBFM-IoT</a></li> -->
+            <li class="menu-inner-list"><a href="drones/index.html">Drones</a></li>
+            <li class="menu-inner-list"><a href="robot/index.html">Robots</a></li>
+            <!-- <li class="menu-inner-list"><a href="#">Drone Accessories</a></li> -->
+            <!-- <li class="menu-inner-list"><a href="com/index.html">CoM</a></li>
+            <li class="menu-inner-list"><a href="som/index.html">SoM</a></li> -->
+            <!-- <li class="menu-inner-list"><a href="services/index.html">Applications</a></li> -->
+            <li class="menu-inner-list"><a href="embedded/index.html">Power Flight</a></li>
+
+            <!-- <li class="menu-inner-list"><a href="kids/index.html">Kids</a></li> -->
+            <li class="menu-inner-list"><a href="connect/index.html">Connect</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="nav-search-bar">
+    <i onclick="hidesearchbar();" class="fa-solid fa-xmark"></i>
+    <div class="search-bar">
+        <i class='bx bx-search'></i>
+        <input type="text" name="" onkeyup="mySearchFunction();" id="search-input" placeholder="Search here..">
+    </div>
+    <div class="search-result">
+        <ul id="my-search-ul">
+            <li><a href="iot/index.html">IoT</a></li>
+            <li><a href="com/index.html">CoM</a></li>
+            <li><a href="som/index.html">SoM</a></li>
+            <li><a href="drones/index.html">Drones</a></li>
+            <li><a href="drones/index.html#carousel_508b">Drone Accessories</a></li>
+            <li><a href="robot/index.html">Robots</a></li>
+            <li><a href="services/index.html#carousel_9129">Cloud Services</a></li>
+            <li><a href="services/index.html#sec-d8ca">R & D Example Products</a></li>
+            <li><a href="services/index.html#sec-321b">Manufacturing & Prototyping</a></li>
+            <li><a href="iot/index.html#carousel_2b51">Temperature Analyser</a></li>
+            <li><a href="iot/index.html#carousel_2b51">Plant Health Monitor</a></li>
+            <li><a href="drones/index.html#carousel_eb88">FPV Drone Nano</a></li>
+            <li><a href="drones/index.html#carousel_72be">FPV Drone Micro</a></li>
+            <li><a href="drones/index.html#carousel_2466">FPV Drone Mini</a></li>
+            <li><a href="drones/index.html#carousel_fcdf">Custom Drone boards</a></li>
+          </ul>
+    </div>
+    <div class="suggessions-bar">
+        <h6>Suggested Links</h6>
+        <ul>
+            <li><a href="services/index.html">Research and Development</a></li>
+            <li><a href="connect/index.html#carousel_f2db">Our Professionals</a></li>
+            <li><a href="connect/index.html#carousel_0256">Find Us on Social Media</a></li>
+            <li><a href="iot/index.html#carousel_2b51">Temperature Analyzer</a></li>
+            <li><a href="iot/index.html#carousel_2b51">Plant Health Monitor</a></li>
+            <li><a href="robot/index.html">Robots</a></li>
+            <li><a href="drones/index.html">Drones</a></li>
+        </ul>
+    </div>
+</div>
+
+<nav class="my-nav">
+    <div class="my-nav-container">
+        <div onmouseover="hideHoverBanner()" class="my-logo"><a class="my-logo-text" href="index.html">Abhram<br>Technologies</a></div>
+        <div class="my-links">
+            <ul>               
+                 <li  class="mylist"><a href="/index.html" class="my-list-link">Home</a></li>
+
+                <!-- <li  class="mylist"><a href="iot/index.html" class="my-list-link">IBFM-IoT</a></li> -->
+                <li  class="mylist"><a href="drones/index.html" class="my-list-link">Drones</a></li>
+                <li  class="mylist"><a href="robot/index.html" class="my-list-link">Robots</a></li>
+                <!-- <li class="mylist"><a href="#" class="my-list-link">Accessories</a></li> -->
+                <!-- <li  class="mylist"><a href="com/index.html" class="my-list-link">CoM</a></li>
+                <li  class="mylist"><a href="som/index.html" class="my-list-link">SoM</a></li> -->
+                <!-- <li  class="mylist"><a href="services/index.html" class="my-list-link">Applications</a></li> -->
+                <li  class="mylist"><a href="embedded/index.html" class="my-list-link">Power Flight</a></li>
+                <!-- <li  class="mylist"><a href="kids/index.html" class="my-list-link">Kids</a></li> -->
+                <li  class="mylist"><a href="connect/index.html" class="my-list-link">Connect</a></li>
+                <li  class="mylist"><a href="team/index.html" class="my-list-link">Team</a></li>
+            </ul>
+        </div>
+        <div onmouseout="hideHoverBanner()" class="cover-div"></div>
+        <div class="my-icons">
+            <ul>
+                <li onmouseover="hideHoverBanner();" class="my-icon-list"><a onclick="showsearchbar();" class="my-icon-a"><i onclick="showsearchbar();" class="fa-solid fa-magnifying-glass"></i></a></li>
+                <!-- <li onmouseover="hideHoverBanner();" class="my-icon-list"><a href="store/index.html" class="my-icon-a"><i class='bx bx-store' ></i></a></li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Header -->
+    <header class="ex-header">
+        <div class="ban-all"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+                    <h1>Privacy Policy</h1>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+
+    <!-- Basic -->
+    <div class="ex-basic-1 pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10 offset-xl-1">
+
+                    <h2 class="mt-5 mb-3">Introduction</h2>
+                    <p class="mb-5">Welcome to Abhram Technologies Ltd ("we," "our," or "us"). This Privacy Policy governs the manner in which Abhram Technologies Ltd collects, uses, maintains, and discloses information collected from users (each, a "User") of the www.abhram.com website and all products and services offered by Abhram Technologies Ltd.</p>
+                    
+                    <h2 class="mb-3">Personal Identification Information</h2>
+                    <p class="mb-5">We may collect personal information from Users in various ways, including when Users visit our site, register on the site, place an order, respond to a form, and in connection with other activities, features, or services available on our Site. Users may be asked, as appropriate, for their name, email address, phone number, and other contact details. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain activities.</p>
+                   
+                    <h2 class="mt-5 mb-3">Non-Personal Identification Information</h2>
+                    <p class="mb-5">We may collect non-personal information about Users whenever they interact with our site. This non-personal information may include the type of computer, the operating system, Internet service providers utilized, and other similar information.</p>
+                    
+                    <h2 class="mt-5 mb-3">Web Browser Cookies</h2>
+                    <p class="mb-5">Our website employs cookies to enhance the User experience. A cookie is a small file that a User's web browser places on their hard drive for record-keeping purposes and to track information about them. Users have the option to set their web browser to refuse cookies or to be alerted when cookies are being sent. However, please note that disabling cookies may result in some parts of the site not functioning optimally. By continuing to use our website, you consent to the use of cookies for the stated purposes.</p>
+                    
+
+                    
+                    <h2 class="mb-3">How Abhram Technologies Ltd Uses Collected Information</h2>
+                    <p class="mb-4">At Abhram Technologies Ltd, we may collect and utilize personal information from Users for the following purposes:</p>
+                    <ul class="list-unstyled li-space-lg mb-5">
+                        <li class="d-flex pb-3">
+                            1.<div class="flex-grow-1">Enhancing Customer Service</div>
+                        </li>
+                        <li class="d-flex pb-3">
+                            2.<div class="flex-grow-1">Personalizing User Experience</div>
+                        </li>
+                        <li class="d-flex pb-3">
+                            3.<div class="flex-grow-1">Improving Our Site</div>
+                        </li>
+                        <li class="d-flex pb-3">
+                            4.<div class="flex-grow-1">Processing Payments</div>
+                        </li>
+                        <li class="d-flex pb-3">
+                            5.<div class="flex-grow-1">Sharing Information with Third Parties</div>
+                        </li>
+                        <li class="d-flex pb-3">
+                            6.<div class="flex-grow-1">Managing Promotions, Contests, Surveys, or Other Site Features</div>
+                        </li>
+                        <li class="d-flex pb-3">
+                            7.<div class="flex-grow-1">Sending Periodic Emails</div>
+                        </li>
+                    </ul>
+                    <p class="mb-4">At Abhram Technologies Ltd, our communication through email is conducted with the utmost professionalism. We utilize email addresses to provide crucial updates on user orders, ensuring a seamless and informed transaction experience. Responding promptly and professionally to inquiries and requests is a priority, leveraging email as a primary channel for efficient communication. Users who opt into our mailing list receive carefully curated communications, including industry news and updates. We respect user autonomy and offer clear unsubscribe instructions in each email, empowering users to manage their preferences seamlessly. Our commitment is to uphold the highest standards, providing transparent and accessible avenues for users to tailor their communication preferences in line with their professional needs.</p>
+                    
+                    <h2 class="mt-5 mb-3">Protecting Your Information  </h2>
+                    <p class="mb-5">At Abhram Technologies Ltd, safeguarding your information is paramount. We implement meticulous data collection, storage, and processing practices, along with robust security measures, to thwart unauthorized access, alteration, disclosure, or destruction of your personal information. This includes fortifying elements such as usernames, passwords, transaction details, and stored data on our site. Our commitment extends to ensuring a secure communication environment through encryption and digital signatures. Rest assured, our site adheres rigorously to PCI  standards, underscoring our dedication to maintaining the highest levels of data security for our users.</p>
+                     
+                    <h2 class="mt-5 mb-3">Changes to Our Privacy Policy at Abhram Technologies Ltd</h2>
+                    <p class="mb-5">At Abhram Technologies Ltd, we reserve the right to update our privacy policy as needed. Any modifications will be promptly communicated by posting a notification on the main page of our website, revising the updated date at the bottom of this page, and sending an email to notify you. We encourage Users to regularly check this page for any changes, ensuring they stay informed about how we continually work to protect the information we collect. By using our services, you acknowledge and agree that it is your responsibility to periodically review the privacy policy and stay aware of any modifications. Your continued use of our services following changes to this policy will be deemed as acceptance of those changes.</p>
+                    
+                    <h2 class="mt-5 mb-3">Your Acceptance of Terms</h2>
+                    <p class="mb-5">Your use of this site signifies your acceptance of the outlined privacy policy. If you do not agree to these terms, we recommend discontinuing the use of the site. Continued use of the site following changes to this policy will be considered as an acceptance of those changes.</p>
+                    
+                    <h2 class="mt-5 mb-3">Contacting Abhram Technologies Ltd</h2>
+                    <p class="mb-5">For any inquiries about this Privacy Policy, the practices of our site, or your dealings with us, please feel free to contact us at Abhram Technologies Ltd. Your questions and concerns are important to us, and we are committed to providing you with the information and assistance you may require.</p>
+                    
+                    <p class="mb-5"><strong>Mail : io@abhram.com</strong></p>
+                    
+                    <p class="mb-5"><strong>Ph : +91 9961 638 639</strong></p>
+                    
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of ex-basic-1 -->
+    <!-- end of basic -->
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div class="d-flex align-items-center">
+                        <h4 class="">Abhram <br> Technologies</h4>
+                    </div>
+                    <p class="py-3 para-light">Abhram Technologies pioneers transformative solutions, seamlessly integrating AI, robotics, and cloud services to redefine technological landscapes.</p>
+                    <div class="d-flex align-items-center">
+                        <!-- <div>
+                            <p style=" padding:3px; bottom: 0;">© 2023 Abhram Technologies</p><br>
+                            
+                        </div> -->
+                    </div>
+                </div> <!-- end of col -->
+  
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div>
+                                          <h4 class="py-2">Quick Links</h4>
+                 
+
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="index.html"><p class="ms-3">Home</p></a>
+                        </div>
+
+                        <!-- <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="services/index.html"><p class="ms-3">Applications</p></a>
+                        </div> -->
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="connect/index.html"><p class="ms-3">Contact</p></a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+  
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div>
+                        <h4 class="py-2">Useful Links</h4>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="privacy.html"><p class="ms-3">Privacy Policy</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="disclaimer.html"><p class="ms-3">Disclaimer</p></a>
+                        </div>
+                        <div class="d-flex align-items-center py-2">
+                            <i class="fas fa-caret-right"></i>
+                            <a href="faq.html"><p class="ms-3">FAQ</p></a>
+                        </div>
+                    </div>
+                </div> <!-- end of col -->
+  
+                <div class="col-lg-3 py-4 py-md-5">
+                    <div class="d-flex align-items-center">
+                        <h4>Connect Us</h4>
+                    </div>
+                    
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <p class="ms-3">Kallarikkal building , Arpana Nagar, Palluruthy, Kochi, 
+                            682006</p>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <p class="ms-3">Mail us io@abhram.com</p>
+                    </div>
+                    <div class="d-flex align-items-center py-2">
+                        <i class="fas fa-caret-right"></i>
+                        <p class="ms-3">Call Us (+91) 9961 638 639</p>
+                    </div>
+  
+  
+                    <div style="margin-top: 10px;" class="d-flex">
+                        <div class="me-3">
+                            <a href="https://www.facebook.com/profile.php?id=61552439575358">
+                                <i class="fa-brands fa-facebook fa-xl"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="https://twitter.com/Abhram_Tech">
+                                <i class="fa-brands fa-x-twitter fa-xl"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="https://www.instagram.com/abhram_technologies?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr">
+                                <i class="fa-brands fa-instagram fa-xl"></i>
+                            </a>
+                        </div>
+                        <div class="me-3">
+                            <a href="https://www.linkedin.com/company/abhram-technologies/">
+                                <i class="fa-brands fa-linkedin fa-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+  
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of footer -->
+  
+    <div style="line-height: 1.5;" class="bottom text-light" >
+        <div class="container">
+            <div>
+                <p style="text-align:center; color: #454545;">© 2025 <a style="color: #454545; text-decoration: none; font-size:14px;" href="index.html">Abhram Technologies</a></p>
+               
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of bottom -->
+    <!-- Bottom -->
+    <div style="line-height: 1.5;" class="bottom text-light" >
+        <div class="container">
+            <div>
+                
+            </div>
+        </div> <!-- end of container -->
+    </div> <!-- end of bottom -->
+  
+  
+    <!-- //Back To Top Button
+    <button onclick="topFunction()" id="myBtn">
+        <img src="assets/images/up-arrow.png" alt="alternative">
+    </button>
+    //end of back to top button -->
+  
+  
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <!-- <script src="../js/purecounter.min.js"></script> Purecounter counter for statistics numbers -->
+    <!-- <script src="../js/swiper.min.js"></script>Swiper for image and text sliders -->
+    <!-- <script src="../js/aos.js"></script>AOS on Animation Scroll -->
+    <script src="js/script.js"></script>  <!-- Custom scripts -->
+</body>
+</html>

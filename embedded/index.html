@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <title>PowerFlight - Efficient Energy Solutions</title>
+  <meta name="description" content="Discover PowerFlight, a cutting-edge platform for efficient energy solutions in various applications, ensuring sustainability and innovation in energy management.">
+  <meta name="keywords" content="PowerFlight, energy solutions, efficient energy, sustainability, energy management, innovative technology">
+  <meta name="author" content="Abhram Technologies">
+  <meta property="og:title" content="PowerFlight - Efficient Energy Solutions">
+  <meta property="og:description" content="Explore PowerFlight, a pioneering platform delivering efficient energy solutions and promoting sustainability in energy management.">
+  <meta property="og:url" content="https://www.abhram.com/embedded/index.html">
+  <meta name="twitter:title" content="PowerFlight - Efficient Energy Solutions">
+  <meta name="twitter:description" content="Explore PowerFlight, a pioneering platform delivering efficient energy solutions and promoting sustainability in energy management.">
+  <meta name="twitter:card" content="summary_large_image">
+  
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    
+     <!-- outline css -->
+     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+    
+     <link rel="stylesheet" href="../css/bootstrap.min1.css">
+     <link rel="stylesheet" href="../css/fontawesome-all.min.css">
+     <link rel="stylesheet" href="../css/style1.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..."crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+     <!-- <link rel="stylesheet" href="css/style.css"> -->
+     
+     
+     <!-- ------ -->
+
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+</head>
+  <body style="overflow-x: hidden;" data-home-page="Home.html" data-home-page-title="Home" data-path-to-root="./" data-include-products="false" class="u-body u-xl-mode" data-lang="en">
+    
+     <!-- ---------------------------------------------------------------------------------------------------------------- -->
+     <nav class="my-phone-nav">
+      <div class="phone-nav-container">
+          <div class="phone-nav-logo"><a class="my-logo-text" href="../index.html"><img src="../assets/images/ABHRAM LOGO 1.png" style="width: 100px;"></a></div>
+          <div class="phone-nav-icons">
+              <ul>
+                  <li onclick="showsearchbar()" class="phone-list-icon"><i class='bx bx-search'></i></li>
+                  <!-- <li class="phone-list-icon"><a href="../store/index.html" class="my-icon-a"><i class='bx bx-store' ></i></a></li> -->
+                  <li onclick="onmenuclick();" class="phone-list-icon"><i class='bx bx-menu' ></i></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="phone-menu-open">
+      <i onclick="onmenuclose();" class="fa-solid fa-xmark"></i>
+      <div class="menu-container-inner">
+          <ul>
+              <!-- <li onclick="showdivsubs('phone-menu-open-sub1');" class="menu-inner-list">Products</li>
+              <li onclick="showdivsubs('phone-menu-open-sub2');" class="menu-inner-list">Services</li>
+              <li onclick="showdivsubs('phone-menu-open-sub3');" class="menu-inner-list">R & D</li> -->
+              <li class="menu-inner-list"><a href="../index.html">Home</a></li>
+              <!-- <li class="menu-inner-list"><a href="../iot/index.html">IBFM-IoT</a></li> -->
+              <li class="menu-inner-list"><a href="../drones/index.html">Drones</a></li>
+              <li class="menu-inner-list"><a href="../robot/index.html">Robots</a></li>
+              <!-- <li class="menu-inner-list"><a href="#">Drone Accessories</a></li> -->
+              <!-- <li class="menu-inner-list"><a href="../com/index.html">IO Cloud</a></li> -->
+              <!-- <li class="menu-inner-list"><a href="../som/index.html">IO Chip</a></li> -->
+              <!-- <li class="menu-inner-list"><a href="../services/index.html">Applications</a></li> -->
+              <li class="menu-inner-list"><a href="../embedded/index.html">Power Flight</a></li>
+
+              <!-- <li class="menu-inner-list"><a href="../kids/index.html">Kids</a></li> -->
+              <li class="menu-inner-list"><a href="../connect/index.html">Connect</a></li>
+              <li class="menu-inner-list"><a href="../team/index.html">Team</a></li>
+            </ul>
+      </div>
+  </div>
+  
+  <div class="nav-search-bar">
+      <i onclick="hidesearchbar();" class="fa-solid fa-xmark"></i>
+      <div class="search-bar">
+          <i class='bx bx-search'></i>
+          <input type="text" name="" onkeyup="mySearchFunction();" id="search-input" placeholder="Search here..">
+      </div>
+      <div class="search-result">
+          <ul id="my-search-ul">
+              <!-- <li><a href="../iot/index.html">IBFM-IoT</a></li>
+              <li><a href="../com/index.html">IO Cloud</a></li> -->
+              <!-- <li><a href="../som/index.html">IO Chip</a></li> -->
+              <li><a href="../drones/index.html">Drones</a></li>
+              <li><a href="../drones/index.html#carousel_508b">Drone Accessories</a></li>
+              <li><a href="../robot/index.html">Robots</a></li>
+              <!-- <li><a href="../services/index.html#carousel_9129">Cloud Services</a></li>
+              <li><a href="../services/index.html#sec-d8ca">R & D Example Products</a></li>
+              <li><a href="../services/index.html#sec-321b">Manufacturing & Prototyping</a></li>
+              <li><a href="../iot/index.html#carousel_2b51">Temperature Analyser</a></li>
+              <li><a href="../iot/index.html#carousel_2b51">Plant Health Monitor</a></li>
+              <li><a href="../drones/index.html#carousel_eb88">FPV Drone Nano</a></li>
+              <li><a href="../drones/index.html#carousel_72be">FPV Drone Micro</a></li>
+              <li><a href="../drones/index.html#carousel_2466">FPV Drone Mini</a></li>
+              <li><a href="../drones/index.html#carousel_fcdf">Custom Drone boards</a></li> -->
+            </ul>
+      </div>
+      <div class="suggessions-bar">
+          <h6>Suggested Links</h6>
+          <ul>
+            <!-- <li><a href="../services/index.html">Drone services</a></li>
+            <li><a href="../services/index.html">Custom Drone</a></li>
+            <li><a href="../iot/index.html#carousel_2b51">Temperature Analyzer</a></li>
+            <li><a href="../iot/index.html">Custom IOT Board</a></li>
+            <li><a href="../com/index.html">IO Cloud</a></li>
+            <li><a href="../iot/index.html">Micro Board X</a></li> -->
+            <!-- <li><a href="../som/index.html">IO chip</a></li> -->
+            <li><a href="../iot/index.html">Micro Code</a></li>
+            <li><a href="../team/index.html">Team</a></li>
+            <li><a href="../connect/index.html#carousel_0256">Connect</a></li>
+            <li><a href="../faq.html">FAQ</a></li>
+        </ul>
+      </div>
+  </div>
+  
+  <nav class="my-nav">
+      <div class="my-nav-container">
+        <div onmouseover="hideHoverBanner()" class="my-logo"><a class="my-logo-text" href="../index.html"><img src="../assets/images/ABHRAM LOGO 1.png" style="width: 250px;"></a></div>
+          <div class="my-links">
+              <ul>
+                  <li class="mylist"><a href="../index.html">Home</a></li>
+                  <!-- <li  class="mylist"><a href="../iot/index.html" class="my-list-link">IBFM-IoT</a></li> -->
+                  <li  class="mylist"><a href="../drones/index.html" class="my-list-link">Drones</a></li>
+                  <li  class="mylist"><a href="../robot/index.html" class="my-list-link">Robots</a></li>
+                  <!-- <li class="mylist"><a href="#" class="my-list-link">Accessories</a></li> -->
+                  <!-- <li  class="mylist"><a href="../com/index.html" class="my-list-link">IO Cloud</a></li> -->
+                  <!-- <li  class="mylist"><a href="../som/index.html" class="my-list-link">IO Chip</a></li> -->
+                  <!-- <li  class="mylist"><a href="../services/index.html" class="my-list-link">Applications</a></li> -->
+                  <li  class="mylist"><a href="../embedded/index.html" class="my-list-link">Power FLight</a></li>
+
+                  <!-- <li  class="mylist"><a href="../kids/index.html" class="my-list-link">Kids</a></li> -->
+                  <li  class="mylist"><a href="../connect/index.html" class="my-list-link">Connect</a></li>
+                  <li  class="mylist"><a href="../team/index.html" class="my-list-link">Team</a></li>
+                </ul>
+          </div>
+          <div onmouseout="hideHoverBanner()" class="cover-div"></div>
+          <div class="my-icons">
+              <ul>
+                  <li onmouseover="hideHoverBanner();" class="my-icon-list"><a onclick="showsearchbar();" class="my-icon-a"><i onclick="showsearchbar();" class="fa-solid fa-magnifying-glass"></i></a></li>
+                  <!-- <li onmouseover="hideHoverBanner();" class="my-icon-list"><a href="../store/index.html" class="my-icon-a"><i class='bx bx-store' ></i></a></li> -->
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+<!-- ----------------------------------------------------------------------------------- -->
+    
+    <section class="u-align-center u-black u-clearfix u-container-align-center-md u-container-align-center-sm u-section-1" id="carousel_a48c">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <img class="u-image u-image-default u-image-1" src="images/image-removebg-preview.png" alt="" data-image-width="607" data-image-height="411" data-animation-name="customAnimationIn" data-animation-duration="1000">
+        <div class="u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+            <h3 class="u-align-left-xs u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">&nbsp;​Abhram </h3>
+            <h1 class="u-custom-font u-font-montserrat u-text u-text-body-alt-color u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000"> Power Flight</h1>
+            <div class="u-align-left u-container-style u-expanded-width-xs u-group u-group-2">
+              <div class="u-container-layout u-valign-bottom-xs u-container-layout-2">
+                <p class="u-text u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000"> "Discover our hardware designs specifically for drone technology. Our solutions offer seamless integration, efficient real-time processing, and compact, power-efficient designs to ensure optimal performance in all your aerial applications."<br>
+                </p>
+                <!-- <a onclick="contact_fill('embed');" class="u-border-2 u-border-active-white u-border-hover-white u-border-white u-btn u-btn-round u-button-style u-none u-radius u-text-active-white u-text-hover-white u-text-white u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1000">contact Us</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-container-align-center u-section-2" id="sec-7862">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-align-center u-text u-text-default u-text-1">products</h2>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-white u-section-3" id="carousel_2210">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></div>
+        <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-32-lg u-size-32-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <div class="u-carousel u-expanded-width u-gallery u-layout-thumbnails u-lightbox u-no-transition u-show-text-always u-gallery-1" id="carousel-0c55" data-interval="5000" data-u-ride="carousel">
+                    <div class="u-carousel-inner u-gallery-inner" role="listbox">
+                      <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/hq36-1.PNG" >
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-1">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-gallery-item u-carousel-item-2">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/hq36-2.png">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-2">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-gallery-item u-carousel-item-3" data-image-width="2836" data-image-height="1875">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/hq36-3.png">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-3">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-0c55" role="button" data-u-slide="prev">
+                      <span aria-hidden="true">
+                        <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                      </span>
+                      <span class="sr-only">
+                        <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                      </span>
+                    </a>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-0c55" role="button" data-u-slide="next">
+                      <span aria-hidden="true">
+                        <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                      </span>
+                      <span class="sr-only">
+                        <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                      </span>
+                    </a>
+                    <ol class="u-carousel-thumbnails u-spacing-10 u-carousel-thumbnails-1">
+                      <li class="u-active u-carousel-thumbnail u-carousel-thumbnail-1" data-u-target="#carousel-0c55" data-u-slide-to="0">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/hq36-1.PNG">
+                      </li>
+                      <li class="u-carousel-thumbnail u-carousel-thumbnail-2" data-u-target="#carousel-0c55" data-u-slide-to="1">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/hq36-2.png">
+                      </li>
+                      <li class="u-carousel-thumbnail u-carousel-thumbnail-3" data-u-target="#carousel-0c55" data-u-slide-to="2">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/hq36-3.png">
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-28-lg u-size-28-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-container-layout-2">
+                  <h3 class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-1">HQ_36
+                  </h3>
+                  <p class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-2"> This power system for hex and quadcopters is easy to use and reliable, with dual autopilot Power Module, switchable 5V/12V supply (BEC), 5v BEC, 12V BEC, and real-time monitoring.</p>
+                  <p class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-large-text u-text u-text-grey-70 u-text-variant u-text-3">Specifications </p>
+                  <ul class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-4">
+                    <li>Dual Autopilot Power Supply system<br>
+                   </li>
+                    <li>12s or 6S <br></li>
+                    <li>One 5v -2 Amp Power supply<br>
+                    </li>
+                    <li>One 12v-2 Amp power supply<br>
+                    </li>
+                    <li>One 12v/5v -2Amp Switchable power supply<br>
+                    </li>
+                    <li>For Hexa / Quad<br>
+                    </li>
+                    <li>LED Indicator for Power<br>
+                    </li>
+                    <li>High Efficiency, High reliability UAV standard designing.<br>
+                    </li>
+                    <li>Cooling by free air convention<br>
+                    </li>
+                    <li>SMPS System <br></li>
+                    <li>Most securable and safe Drone board with dual autopilot
+                      power <br></li>
+                  </ul>
+                  <a onclick="contact_fill('smart_really');" class="u-align-left u-border-2 u-border-active-grey-75 u-border-grey-75 u-border-hover-grey-75 u-btn u-btn-round u-button-style u-none u-radius u-text-active-grey-75 u-text-grey-75 u-text-hover-grey-75 u-btn-1">Contact us </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-white u-section-3" id="carousel_22102">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></div>
+        <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-32-lg u-size-32-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <div class="u-carousel u-expanded-width u-gallery u-layout-thumbnails u-lightbox u-no-transition u-show-text-always u-gallery-1" id="carousel-0c56" data-interval="5000" data-u-ride="carousel">
+                    <div class="u-carousel-inner u-gallery-inner" role="listbox">
+                      <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/vl3.png">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-1">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-gallery-item u-carousel-item-2">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/vl3-1.png">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-2">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-gallery-item u-carousel-item-3" data-image-width="2836" data-image-height="1875">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/vl3-1.png">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-3">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-0c56" role="button" data-u-slide="prev">
+                      <span aria-hidden="true">
+                        <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+    c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+    c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                      </span>
+                      <span class="sr-only">
+                        <svg viewBox="0 0 451.847 451.847"><path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+    c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+    c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path></svg>
+                      </span>
+                    </a>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-0c56" role="button" data-u-slide="next">
+                      <span aria-hidden="true">
+                        <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+    L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+    c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                      </span>
+                      <span class="sr-only">
+                        <svg viewBox="0 0 451.846 451.847"><path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+    L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+    c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path></svg>
+                      </span>
+                    </a>
+                    <ol class="u-carousel-thumbnails u-spacing-10 u-carousel-thumbnails-1">
+                      <li class="u-active u-carousel-thumbnail u-carousel-thumbnail-1" data-u-target="#carousel-0c56" data-u-slide-to="0">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/vl3.png">
+                      </li>
+                      <li class="u-carousel-thumbnail u-carousel-thumbnail-2" data-u-target="#carousel-0c56" data-u-slide-to="1">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/vl3-1.png">
+                      </li>
+                      <!-- <li class="u-carousel-thumbnail u-carousel-thumbnail-3" data-u-target="#carousel-0c55" data-u-slide-to="2">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/hq36-3.png">
+                      </li> -->
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-28-lg u-size-28-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-container-layout-2">
+                  <h3 class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-1">VL3</h3>
+                  <p class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-2">All new PDB for Fighter, Striver VTOLs, with Power module and power distribution front board, ensuring efficient power management and distribution.</p>
+                  <p class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-large-text u-text u-text-grey-70 u-text-variant u-text-3">Specifications</p>
+                  <ul class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-4">
+                    <li>Power module integrated (FC1)<br></li>
+                    <li>12s or 6S<br></li>
+                    <li>Dual Autopilot Power Pin (FC1 & FC2 -on FL06)<br></li>
+                    <li>current sense up to 200 amp peak (on FC1)<br></li>
+                    <li>High Efficiency, High reliability UAV standard designing<br></li>
+                    <li>Cooling by free air convention<br></li>
+                    <li>SMPS System<br></li>
+                  </ul>
+                  <a onclick="contact_fill('smart_really');" class="u-align-left u-border-2 u-border-active-grey-75 u-border-grey-75 u-border-hover-grey-75 u-btn u-btn-round u-button-style u-none u-radius u-text-active-grey-75 u-text-grey-75 u-text-hover-grey-75 u-btn-1">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-white u-section-3" id="carousel_22103">
+      <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></div>
+        <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-layout-cell u-left-cell u-size-32-lg u-size-32-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <div class="u-carousel u-expanded-width u-gallery u-layout-thumbnails u-lightbox u-no-transition u-show-text-always u-gallery-1" id="carousel-0c57" data-interval="5000" data-u-ride="carousel">
+                    <div class="u-carousel-inner u-gallery-inner" role="listbox">
+                      <div class="u-active u-carousel-item u-gallery-item u-carousel-item-1">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/vl006.png">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-1">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-gallery-item u-carousel-item-2">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/vl6-1.jpg">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-2">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                      </div>
+                      <div class="u-carousel-item u-gallery-item u-carousel-item-3" data-image-width="2836" data-image-height="1875">
+                        <div class="u-back-slide">
+                          <img class="u-back-image u-expanded" src="images/vl6-2.jpg">
+                        </div>
+                        <div class="u-over-slide u-valign-middle u-over-slide-3">
+                          <h3 class="u-gallery-heading">Sample Title</h3>
+                          <p class="u-gallery-text">Sample Text</p>
+                        </div>
+                        <!-- <div class="u-carousel-item u-gallery-item u-carousel-item-4" data-image-width="2836" data-image-height="1875">
+                          <div class="u-back-slide">
+                            <img class="u-back-image u-expanded" src="images/vl6-3.jpg">
+                          </div>
+                          <div class="u-over-slide u-valign-middle u-over-slide-3">
+                            <h3 class="u-gallery-heading">Sample Title</h3>
+                            <p class="u-gallery-text">Sample Text</p>
+                          </div> -->
+                      </div>
+                    </div>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-1" href="#carousel-0c57" role="button" data-u-slide="prev">
+                      <span aria-hidden="true">
+                        <svg viewBox="0 0 451.847 451.847">
+                          <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+                          c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+                          c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                        </svg>
+                      </span>
+                      <span class="sr-only">
+                        <svg viewBox="0 0 451.847 451.847">
+                          <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+                          c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+                          c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                    <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-carousel-control-2" href="#carousel-0c57" role="button" data-u-slide="next">
+                      <span aria-hidden="true">
+                        <svg viewBox="0 0 451.846 451.847">
+                          <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                          L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                          c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                        </svg>
+                      </span>
+                      <span class="sr-only">
+                        <svg viewBox="0 0 451.846 451.847">
+                          <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+                          L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+                          c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                    <ol class="u-carousel-thumbnails u-spacing-10 u-carousel-thumbnails-1">
+                      <li class="u-active u-carousel-thumbnail u-carousel-thumbnail-1" data-u-target="#carousel-0c57" data-u-slide-to="0">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/vl006.png">
+                      </li>
+                      <li class="u-carousel-thumbnail u-carousel-thumbnail-2" data-u-target="#carousel-0c57" data-u-slide-to="1">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/vl6-1.jpg">
+                      </li>
+                      <li class="u-carousel-thumbnail u-carousel-thumbnail-3" data-u-target="#carousel-0c57" data-u-slide-to="2">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/vl6-2.jpg">
+                      </li>
+                      <!-- <li class="u-carousel-thumbnail u-carousel-thumbnail-4" data-u-target="#carousel-0c55" data-u-slide-to="2">
+                        <img class="u-carousel-thumbnail-image u-image" src="images/vl6-3.jpg">
+                      </li> -->
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-28-lg u-size-28-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-container-layout-2">
+                  <h3 class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-1">VL06</h3>
+                  <p class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-2">This power system for Fighter and striver VTOL is easy to use and reliable, with dual autopilot Power Module, switchable 5V/12V supply (BEC), 5v BEC, 12V BEC, and real-time monitoring.</p>
+                  <p class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-large-text u-text u-text-grey-70 u-text-variant u-text-3">Specifications</p>
+                  <ul class="u-align-left-lg u-align-left-md u-align-left-sm u-align-left-xl u-text u-text-4">
+                    <li>Power module integrated (FC POWER 2)<br></li>
+                    <li>12s or 6S<br></li>
+                    <li>High Efficiency, High reliability UAV standard designing<br></li>
+                    <li>Cooling by free air convention<br></li>
+                    <li>Most securable and safe Drone board with dual autopilot power <br></li>
+                    <li>Available in custom size</li>
+                    <li>SMPS System<br></li>
+                  </ul>
+                  <a onclick="contact_fill('smart_really');" class="u-align-left u-border-2 u-border-active-grey-75 u-border-grey-75 u-border-hover-grey-75 u-btn u-btn-round u-button-style u-none u-radius u-text-active-grey-75 u-text-grey-75 u-text-hover-grey-75 u-btn-1">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="u-align-center u-clearfix u-white u-section-4" id="carousel_d713">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500"></div>
+        <div class="u-grey-80 u-shape u-shape-rectangle u-shape-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750"></div>
+        <div class="data-layout-selected u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-image u-layout-cell u-left-cell u-size-32-lg u-size-32-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1" data-image-width="1280" data-image-height="853" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-valign-bottom u-container-layout-1"></div>
+              </div>
+              <div class="u-align-left u-container-align-left u-container-style u-layout-cell u-right-cell u-size-28-lg u-size-28-xl u-size-60-md u-size-60-sm u-size-60-xs u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">
+                <div class="u-container-layout u-valign-middle-xl u-container-layout-2">
+                  <h3 class="u-align-left u-text u-text-1">Custom  Boards</h3>
+                  <p class="u-align-left u-text u-text-2"> "At Abhram Technologies, we craft scalable custom UAV boards, prioritizing cost-effectiveness, optimized performance, and fast prototyping. Benefit from our IoT expertise, with security measures, custom sensors, and dedicated support throughout development."</p>
+                  <a onclick="contact_fill('embed_custom');" class="u-align-left u-border-2 u-border-active-grey-75 u-border-grey-75 u-border-hover-grey-75 u-btn u-btn-round u-button-style u-none u-radius u-text-active-grey-75 u-text-grey-75 u-text-hover-grey-75 u-btn-1">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+   <!-- Footer -->
+<section class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 py-4 py-md-5">
+              <div class="d-flex align-items-center">
+                <img src="https://eldhogk7.github.io/company-prtfolio/assets/images/ABHRAMLOGOFINAL.png" style="width: 110px; margin-bottom: 1rem;">
+              </div>
+              <p class="py-3 para-light">Abhram Technologies pioneers transformative solutions, seamlessly integrating AI, robotics, and cloud services to redefine technological landscapes.</p>
+              <div class="d-flex align-items-center">
+                  <!-- <div>
+                      <p style=" padding:3px; bottom: 0;">© 2023 Abhram Technologies</p><br>
+                      
+                  </div> -->
+              </div>
+          </div> <!-- end of col -->
+
+          <div class="col-lg-3 py-4 py-md-5">
+              <div>
+                                    <h4 class="py-2">Quick Links</h4>
+                  <div class="d-flex align-items-center py-2">
+                    <i class="fas fa-caret-right"></i>
+                    <a href="../index.html"><p class="ms-3">Home</p></a>
+                  </div>
+
+                  <!-- <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../services/index.html"><p class="ms-3">Applications</p></a>
+                  </div> -->
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../connect/index.html"><p class="ms-3">Contact</p></a>
+                  </div>
+                  
+              </div>
+          </div> <!-- end of col -->
+
+          <div class="col-lg-3 py-4 py-md-5">
+              <div>
+                  <h4 class="py-2">Useful Links</h4>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../privacy.html"><p class="ms-3">Privacy Policy</p></a>
+                  </div>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../disclaimer.html"><p class="ms-3">Disclaimer</p></a>
+                  </div>
+                  <div class="d-flex align-items-center py-2">
+                      <i class="fas fa-caret-right"></i>
+                      <a href="../faq.html"><p class="ms-3">FAQ</p></a>
+                  </div>
+              </div>
+          </div> <!-- end of col -->
+
+          <div class="col-lg-3 py-4 py-md-5">
+              <div class="d-flex align-items-center">
+                  <h4>Connect Us</h4>
+              </div>
+              
+              <div class="d-flex align-items-center py-2">
+                  <i class="fas fa-caret-right"></i>
+                  <p class="ms-3">Kallarikkal building , Arpana Nagar, Palluruthy, Kochi, 
+                      682006</p>
+              </div>
+              <div class="d-flex align-items-center py-2">
+                  <i class="fas fa-caret-right"></i>
+                  <p class="ms-3">Mail us io@abhram.com</p>
+              </div>
+              <div class="d-flex align-items-center py-2">
+                  <i class="fas fa-caret-right"></i>
+                  <p class="ms-3">Call Us (+91) 9961 638 639</p>
+              </div>
+
+
+              <div style="margin-top: 10px;" class="d-flex">
+                  <div class="me-3">
+                      <a href="https://www.facebook.com/profile.php?id=61552439575358">
+                          <i class="fa-brands fa-facebook fa-xl"></i>
+                      </a>
+                  </div>
+                  <div class="me-3">
+                      <a href="https://twitter.com/Abhram_Tech">
+                          <i class="fa-brands fa-x-twitter fa-xl"></i>
+                      </a>
+                  </div>
+                  <div class="me-3">
+                      <a href="https://www.instagram.com/abhram_technologies?igsh=NGVhN2U2NjQ0Yg%3D%3D&utm_source=qr">
+                          <i class="fa-brands fa-instagram fa-xl"></i>
+                      </a>
+                  </div>
+                  <div class="me-3">
+                      <a href="https://www.linkedin.com/company/abhram-technologies/">
+                          <i class="fa-brands fa-linkedin fa-xl"></i>
+                      </a>
+                  </div>
+              </div>
+
+          </div> <!-- end of col -->
+      </div> <!-- end of row -->
+  </div> <!-- end of container -->
+</section> <!-- end of footer -->
+
+<div style="line-height: 0;" class="bottom text-light" >
+  <div class="container">
+      <div>
+          <p style="text-align:center; color: #454545; bottom: 0; font-size:14px;">© 2025 <a style="color: #454545; text-decoration: none; font-size:14px;" href="../index.html">Abhram Technologies</a></p>
+         
+      </div>
+  </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+<!-- Bottom -->
+<div style="line-height: 0;" class="bottom text-light" >
+  <div class="container">
+      <div>
+          
+      </div>
+  </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+
+
+<!-- //Back To Top Button
+<button onclick="topFunction()" id="myBtn">
+  <img src="assets/images/up-arrow.png" alt="alternative">
+</button>
+//end of back to top button -->
+
+
+<!-- Scripts -->
+<script src="../js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+<!-- <script src="../js/purecounter.min.js"></script> Purecounter counter for statistics numbers -->
+<!-- <script src="../js/swiper.min.js"></script>Swiper for image and text sliders -->
+<!-- <script src="../js/aos.js"></script>AOS on Animation Scroll -->
+<script src="../js/script1.js"></script>  <!-- Custom scripts -->
+</body></html>
